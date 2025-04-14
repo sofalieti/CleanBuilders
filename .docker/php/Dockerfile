@@ -61,6 +61,5 @@ RUN git clone https://github.com/seebi/dircolors-solarized
 EXPOSE 5173
 WORKDIR /var/www
 
-#entrypoint
-ENTRYPOINT ["entrypoint.sh"]
+# Запуск PHP-FPM
 CMD ["php-fpm"]
