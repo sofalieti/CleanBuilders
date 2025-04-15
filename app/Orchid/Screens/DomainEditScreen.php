@@ -11,6 +11,7 @@ use Orchid\Screen\Fields\CheckBox;
 use Orchid\Screen\Screen;
 use Orchid\Support\Facades\Layout;
 use Orchid\Support\Facades\Alert;
+use Illuminate\Validation\Rule;
 
 class DomainEditScreen extends Screen
 {
@@ -77,6 +78,9 @@ class DomainEditScreen extends Screen
     {
         return [
             Layout::rows([
+                Input::make('domain.id')
+                    ->type('hidden'),
+
                 Input::make('domain.name')
                     ->title('Название домена')
                     ->placeholder('example.com')
@@ -112,21 +116,12 @@ class DomainEditScreen extends Screen
      */
     public function save(Request $request)
     {
-        $domain = $this->domain ?? new Domain();
+        $domain = Domain::find($request->input('domain.id')) ?? new Domain();
         
-        $validated = $request->validate([
-            'domain.name' => 'required|string|unique:domains,name,' . ($domain->id ?: 'NULL'),
-            'domain.title' => 'required|string',
-            'domain.description' => 'nullable|string',
-            'domain.content' => 'nullable|string',
-            'domain.is_active' => 'boolean'
-        ]);
-
-        $domain->fill($validated['domain']);
+        $domain->fill($request->input('domain'));
         $domain->save();
 
         Alert::info('Домен успешно сохранен');
-
         return redirect()->route('platform.domains');
     }
 } 

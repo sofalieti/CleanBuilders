@@ -1,104 +1,156 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel</title>
-
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        
-        <!-- Custom Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
-
-        <!-- Custom Styles -->
-        <style>
-            body {
-                font-family: 'Instrument Sans', sans-serif;
-            }
-        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ $domain->title }}</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     </head>
-    <body class="bg-light">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <body>
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <div class="parallax-bg"></div>
             <div class="container">
-                <a class="navbar-brand" href="#">Laravel</a>
-                @if (Route::has('login'))
-                    <div class="d-flex">
-                        @auth
-                            <a href="{{ url('/dashboard') }}" class="btn btn-outline-primary">Dashboard</a>
-                        @else
-                            <a href="{{ route('login') }}" class="btn btn-link text-decoration-none">Log in</a>
-                            @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="btn btn-primary ms-3">Register</a>
-                            @endif
-                        @endauth
-                    </div>
-                @endif
+                <div class="hero-content">
+                    <h1 class="display-4 fw-bold mb-4">{{ $domain->title }}</h1>
+                    <p class="lead mb-4">{{ $domain->description }}</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
+                </div>
             </div>
-        </nav>
+        </section>
 
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-5">
-                            <h1 class="h4 mb-3">Let's get started</h1>
-                            <p class="text-muted mb-4">Laravel has an incredibly rich ecosystem.<br>We suggest starting with the following.</p>
-                            
-                            <div class="d-flex flex-column gap-4 mb-4">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="rounded-circle bg-light p-2">
-                                        <div class="rounded-circle bg-primary" style="width: 8px; height: 8px;"></div>
-                                    </div>
-                                    <span>
-                                        Read the
-                                        <a href="https://laravel.com/docs" target="_blank" class="text-danger text-decoration-underline">
-                                            Documentation
-                                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="ms-1">
-                                                <path d="M7.70833 6.95834V2.79167H3.54167M2.5 8L7.5 3.00001" stroke="currentColor" stroke-linecap="square"/>
-                                            </svg>
-                                        </a>
-                                    </span>
-                                </div>
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="rounded-circle bg-light p-2">
-                                        <div class="rounded-circle bg-primary" style="width: 8px; height: 8px;"></div>
-                                    </div>
-                                    <span>
-                                        Watch video tutorials at
-                                        <a href="https://laracasts.com" target="_blank" class="text-danger text-decoration-underline">
-                                            Laracasts
-                                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="ms-1">
-                                                <path d="M7.70833 6.95834V2.79167H3.54167M2.5 8L7.5 3.00001" stroke="currentColor" stroke-linecap="square"/>
-                                            </svg>
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-
-                            <a href="https://cloud.laravel.com" target="_blank" class="btn btn-dark">
-                                Deploy now
-                            </a>
+        <!-- About Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="text-center section-title">Our Services</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-tools feature-icon"></i>
+                            <h3>Repair Services</h3>
+                            <p>Professional repair of all infrared sauna components including heaters, control panels, and wiring.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-cogs feature-icon"></i>
+                            <h3>Maintenance</h3>
+                            <p>Regular maintenance services to keep your sauna running efficiently and extend its lifespan.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-home feature-icon"></i>
+                            <h3>Installation</h3>
+                            <p>Expert installation of new infrared saunas with proper setup and safety checks.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <!-- Laravel Logo -->
-                    <svg class="img-fluid" viewBox="0 0 438 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.2036 -3H0V102.197H49.5189V86.7187H17.2036V-3Z" fill="currentColor"/>
-                        <path d="M110.256 41.6337C108.061 38.1275 104.945 35.3731 100.905 33.3681C96.8667 31.3647 92.8016 30.3618 88.7131 30.3618C83.4247 30.3618 78.5885 31.3389 74.201 33.2923C69.8111 35.2456 66.0474 37.928 62.9059 41.3333C59.7643 44.7401 57.3198 48.6726 55.5754 53.1293C53.8287 57.589 52.9572 62.274 52.9572 67.1813C52.9572 72.1925 53.8287 76.8995 55.5754 81.3069C57.3191 85.7173 59.7636 89.6241 62.9059 93.0293C66.0474 96.4361 69.8119 99.1155 74.201 101.069C78.5885 103.022 83.4247 103.999 88.7131 103.999C92.8016 103.999 96.8667 102.997 100.905 100.994C104.945 98.9911 108.061 96.2359 110.256 92.7282V102.195H126.563V32.1642H110.256V41.6337ZM108.76 75.7472C107.762 78.4531 106.366 80.8078 104.572 82.8112C102.776 84.8161 100.606 86.4183 98.0637 87.6206C95.5202 88.823 92.7004 89.4238 89.6103 89.4238C86.5178 89.4238 83.7252 88.823 81.2324 87.6206C78.7388 86.4183 76.5949 84.8161 74.7998 82.8112C73.004 80.8078 71.6319 78.4531 70.6856 75.7472C69.7356 73.0421 69.2644 70.1868 69.2644 67.1821C69.2644 64.1758 69.7356 61.3205 70.6856 58.6154C71.6319 55.9102 73.004 53.5571 74.7998 51.5522C76.5949 49.5495 78.738 47.9451 81.2324 46.7427C83.7252 45.5404 86.5178 44.9396 89.6103 44.9396C92.7012 44.9396 95.5202 45.5404 98.0637 46.7427C100.606 47.9451 102.776 49.5487 104.572 51.5522C106.367 53.5571 107.762 55.9102 108.76 58.6154C109.756 61.3205 110.256 64.1758 110.256 67.1821C110.256 70.1868 109.756 73.0421 108.76 75.7472Z" fill="currentColor" />
-                        <path d="M242.805 41.6337C240.611 38.1275 237.494 35.3731 233.455 33.3681C229.416 31.3647 225.351 30.3618 221.262 30.3618C215.974 30.3618 211.138 31.3389 206.75 33.2923C202.36 35.2456 198.597 37.928 195.455 41.3333C192.314 44.7401 189.869 48.6726 188.125 53.1293C186.378 57.589 185.507 62.274 185.507 67.1813C185.507 72.1925 186.378 76.8995 188.125 81.3069C189.868 85.7173 192.313 89.6241 195.455 93.0293C198.597 96.4361 202.361 99.1155 206.75 101.069C211.138 103.022 215.974 103.999 221.262 103.999C225.351 103.999 229.416 102.997 233.455 100.994C237.494 98.9911 240.611 96.2359 242.805 92.7282V102.195H259.112V32.1642H242.805V41.6337ZM241.31 75.7472C240.312 78.4531 238.916 80.8078 237.122 82.8112C235.326 84.8161 233.156 86.4183 230.614 87.6206C228.07 88.823 225.251 89.4238 222.16 89.4238C219.068 89.4238 216.275 88.823 213.782 87.6206C211.289 86.4183 209.145 84.8161 207.35 82.8112C205.554 80.8078 204.182 78.4531 203.236 75.7472C202.286 73.0421 201.814 70.1868 201.814 67.1821C201.814 64.1758 202.286 61.3205 203.236 58.6154C204.182 55.9102 205.554 53.5571 207.35 51.5522C209.145 49.5495 211.288 47.9451 213.782 46.7427C216.275 45.5404 219.068 44.9396 222.16 44.9396C225.251 44.9396 228.07 45.5404 230.614 46.7427C233.156 47.9451 235.326 49.5487 237.122 51.5522C238.917 53.5571 240.312 55.9102 241.31 58.6154C242.306 61.3205 242.806 64.1758 242.806 67.1821C242.805 70.1868 242.305 73.0421 241.31 75.7472Z" fill="currentColor" />
-                        <path d="M438 -3H421.694V102.197H438V-3Z" fill="currentColor" />
-                        <path d="M139.43 102.197H155.735V48.2834H183.712V32.1665H139.43V102.197Z" fill="currentColor" />
-                        <path d="M324.49 32.1665L303.995 85.794L283.498 32.1665H266.983L293.748 102.197H314.242L341.006 32.1665H324.49Z" fill="currentColor" />
-                        <path d="M376.571 30.3656C356.603 30.3656 340.797 46.8497 340.797 67.1828C340.797 89.6597 356.094 104 378.661 104C391.29 104 399.354 99.1488 409.206 88.5848L398.189 80.0226C398.183 80.031 389.874 90.9895 377.468 90.9895C363.048 90.9895 356.977 79.3111 356.977 73.269H411.075C413.917 50.1328 398.775 30.3656 376.571 30.3656ZM357.02 61.0967C357.145 59.7487 359.023 43.3761 376.442 43.3761C393.861 43.3761 395.978 59.7464 396.099 61.0967H357.02Z" fill="currentColor" />
-                    </svg>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="text-center section-title">Contact Us</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="contact-form">
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" placeholder="Your Phone">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Bootstrap JS Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Map Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="map-container">
+                    <iframe src="{{ $domain->google_maps }}" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Contact Info</h4>
+                        <p><i class="fas fa-phone"></i> {{ $domain->phone }}</p>
+                        <p><i class="fas fa-envelope"></i> {{ $domain->email }}</p>
+                        <p><i class="fas fa-map-marker-alt"></i> {{ $domain->address }}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Home</a></li>
+                            <li><a href="#" class="text-white">Services</a></li>
+                            <li><a href="#" class="text-white">About Us</a></li>
+                            <li><a href="#" class="text-white">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="text-center">
+                    <p>&copy; 2024 {{ $domain->title }}. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const parallaxBg = document.querySelector('.parallax-bg');
+                let lastScroll = 0;
+
+                function updateParallax() {
+                    const scroll = window.pageYOffset;
+                    const speed = 0.5;
+                    const yPos = -(scroll * speed);
+                    parallaxBg.style.transform = `translate3d(0, ${yPos}px, 0)`;
+                    lastScroll = scroll;
+                }
+
+                window.addEventListener('scroll', function() {
+                    requestAnimationFrame(updateParallax);
+                });
+
+                // Инициализация при загрузке
+                updateParallax();
+            });
+        </script>
     </body>
 </html>
