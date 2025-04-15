@@ -17,6 +17,9 @@ use App\Orchid\Screens\Role\RoleListScreen;
 use App\Orchid\Screens\User\UserEditScreen;
 use App\Orchid\Screens\User\UserListScreen;
 use App\Orchid\Screens\User\UserProfileScreen;
+use App\Orchid\Screens\DomainScreen;
+use App\Orchid\Screens\DomainListScreen;
+use App\Orchid\Screens\DomainEditScreen;
 use Illuminate\Support\Facades\Route;
 use Tabuna\Breadcrumbs\Trail;
 
@@ -102,3 +105,21 @@ Route::screen('/examples/charts', ExampleChartsScreen::class)->name('platform.ex
 Route::screen('/examples/cards', ExampleCardsScreen::class)->name('platform.example.cards');
 
 // Route::screen('idea', Idea::class, 'platform.screens.idea');
+
+Route::screen('domains', DomainListScreen::class)
+    ->name('platform.domains')
+    ->breadcrumbs(fn (Trail $trail) => $trail
+        ->parent('platform.index')
+        ->push('Домены', route('platform.domains')));
+
+Route::screen('domains/create', DomainEditScreen::class)
+    ->name('platform.domains.create')
+    ->breadcrumbs(fn (Trail $trail) => $trail
+        ->parent('platform.domains')
+        ->push('Создание домена', route('platform.domains.create')));
+
+Route::screen('domains/{domain}/edit', DomainEditScreen::class)
+    ->name('platform.domains.edit')
+    ->breadcrumbs(fn (Trail $trail, $domain) => $trail
+        ->parent('platform.domains')
+        ->push('Редактирование домена', route('platform.domains.edit', $domain)));

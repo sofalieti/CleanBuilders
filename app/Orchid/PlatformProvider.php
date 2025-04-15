@@ -9,6 +9,7 @@ use Orchid\Platform\ItemPermission;
 use Orchid\Platform\OrchidServiceProvider;
 use Orchid\Screen\Actions\Menu;
 use Orchid\Support\Color;
+use App\Orchid\Screens\DomainScreen;
 
 class PlatformProvider extends OrchidServiceProvider
 {
@@ -89,6 +90,11 @@ class PlatformProvider extends OrchidServiceProvider
                 ->url('https://github.com/orchidsoftware/platform/blob/master/CHANGELOG.md')
                 ->target('_blank')
                 ->badge(fn () => Dashboard::version(), Color::DARK),
+
+            Menu::make('Домены')
+                ->icon('globe')
+                ->route('platform.domains')
+                ->title('Управление доменами'),
         ];
     }
 
