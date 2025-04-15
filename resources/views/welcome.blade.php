@@ -22,9 +22,9 @@
         </section>
 
         <!-- About Section -->
-        <section class="section bg-light">
+        <section class="section bg-light"> 
             <div class="container">
-                <h2 class="text-center section-title">Our Services</h2>
+                <h2 class="text-center section-title">Our Services 2</h2>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="feature-card text-center">
