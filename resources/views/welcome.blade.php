@@ -9,6 +9,22 @@
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     </head>
     <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    @if($domain->attachment()->where('group', 'logo')->first())
+                        <div class="logo">
+                            <img src="{{ $domain->attachment()->where('group', 'logo')->first()->url() }}" 
+                                 alt="{{ $domain->title }}" 
+                                 class="img-fluid">
+                        </div>
+                    @endif
+                    <h1 class="site-title">{{ $domain->title }}</h1>
+                </div>
+            </div>
+        </header>
+
         <!-- Hero Banner -->
         <section class="hero-banner">
             @if($domain->attachment()->where('group', 'banner')->first())
