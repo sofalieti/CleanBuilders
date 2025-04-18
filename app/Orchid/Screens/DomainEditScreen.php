@@ -108,6 +108,12 @@ class DomainEditScreen extends Screen
                     ->sendTrueOrFalse(),
 
                 Upload::make('domain.attachment')
+                    ->title('Баннер для главной страницы')
+                    ->groups('banner')
+                    ->maxFiles(1)
+                    ->acceptedFiles('image/*'),
+
+                Upload::make('domain.attachment')
                     ->title('Изображения')
                     ->groups('images')
                     ->maxFiles(5)

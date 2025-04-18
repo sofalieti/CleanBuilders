@@ -11,7 +11,11 @@
     <body>
         <!-- Hero Banner -->
         <section class="hero-banner">
-            <div class="parallax-bg"></div>
+            @if($domain->attachment()->where('group', 'banner')->first())
+                <div class="parallax-bg" style="background-image: url('{{ $domain->attachment()->where('group', 'banner')->first()->url() }}');"></div>
+            @else
+                <div class="parallax-bg"></div>
+            @endif
             <div class="container">
                 <div class="hero-content">
                     <h1 class="display-4 fw-bold mb-4">{{ $domain->title }}</h1>
