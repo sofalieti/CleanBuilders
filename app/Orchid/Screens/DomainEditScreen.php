@@ -8,6 +8,7 @@ use Orchid\Screen\Actions\Button;
 use Orchid\Screen\Fields\Input;
 use Orchid\Screen\Fields\TextArea;
 use Orchid\Screen\Fields\CheckBox;
+use Orchid\Screen\Fields\Upload;
 use Orchid\Screen\Screen;
 use Orchid\Support\Facades\Layout;
 use Orchid\Support\Facades\Alert;
@@ -105,6 +106,12 @@ class DomainEditScreen extends Screen
                     ->title('Активен')
                     ->value(true)
                     ->sendTrueOrFalse(),
+
+                Upload::make('domain.attachment')
+                    ->title('Изображения')
+                    ->groups('images')
+                    ->maxFiles(5)
+                    ->acceptedFiles('image/*'),
             ]),
         ];
     }
@@ -120,6 +127,10 @@ class DomainEditScreen extends Screen
         
         $domain->fill($request->input('domain'));
         $domain->save();
+
+        $domain->attachment()->syncWithoutDetaching(
+            $request->input('domain.attachment', [])
+        );
 
         Alert::info('Домен успешно сохранен');
         return redirect()->route('platform.domains');

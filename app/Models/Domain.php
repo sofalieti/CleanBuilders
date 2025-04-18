@@ -5,10 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Orchid\Filters\Filterable;
+use Orchid\Attachment\Attachable;
 
 class Domain extends Model
 {
-    use HasFactory, Filterable;
+    use HasFactory, Filterable, Attachable;
 
     protected $fillable = [
         'name',

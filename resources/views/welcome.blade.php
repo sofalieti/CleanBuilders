@@ -51,6 +51,41 @@
             </div>
         </section>
 
+        <!-- Domain Content Section -->
+        @if($domain->content)
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="domain-content">
+                            {!! $domain->content !!}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @endif
+
+        <!-- Gallery Section -->
+        @if($domain->attachment->count() > 0)
+        <section class="section">
+            <div class="container">
+                <h2 class="text-center section-title">Галерея</h2>
+                <div class="row">
+                    @foreach($domain->attachment as $image)
+                    <div class="col-md-4 mb-4">
+                        <div class="gallery-item">
+                            <img src="{{ $image->url() }}" 
+                                 alt="{{ $image->original_name }}" 
+                                 class="img-fluid rounded">
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </section>
+        @endif
+
         <!-- Contact Form -->
         <section id="contact" class="section">
             <div class="container">

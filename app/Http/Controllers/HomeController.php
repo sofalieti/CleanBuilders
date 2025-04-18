@@ -14,7 +14,11 @@ class HomeController extends Controller
         $host = $request->getHost();
         
         // Ищем домен в базе данных
-        $domain = Domain::where('name', $host)->first();
+        $domain = Domain::where('name', $host)
+            ->with(['attachment' => function($query) {
+                $query->where('group', 'images');
+            }])
+            ->first();
         
         // Если домен не найден, используем значения по умолчанию
         if (!$domain) {

@@ -142,4 +142,50 @@ footer {
     .section {
         padding: 40px 0;
     }
+}
+
+.domain-content {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+.domain-content h1,
+.domain-content h2,
+.domain-content h3,
+.domain-content h4,
+.domain-content h5,
+.domain-content h6 {
+    color: var(--primary-color);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.domain-content p {
+    margin-bottom: 1em;
+}
+
+.domain-content ul,
+.domain-content ol {
+    margin-bottom: 1em;
+    padding-left: 2em;
+}
+
+.domain-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 1em 0;
+}
+
+.domain-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.domain-content a:hover {
+    color: var(--secondary-color);
 } 
