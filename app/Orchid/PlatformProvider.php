@@ -9,7 +9,7 @@ use Orchid\Platform\ItemPermission;
 use Orchid\Platform\OrchidServiceProvider;
 use Orchid\Screen\Actions\Menu;
 use Orchid\Support\Color;
-use App\Orchid\Screens\DomainScreen;
+use App\Orchid\Screens\DomainListScreen;
 
 class PlatformProvider extends OrchidServiceProvider
 {
@@ -39,6 +39,21 @@ class PlatformProvider extends OrchidServiceProvider
                 ->icon('bs.book')
                 ->title('Navigation')
                 ->route(config('platform.index')),
+
+            Menu::make('Content Management')
+                ->icon('bs.book')
+                ->title('CMS')
+                ->list([
+                    Menu::make('Domains')
+                        ->icon('bs.globe')
+                        ->route('platform.domains')
+                        ->title('Domains'),
+                        
+                    Menu::make('Menu')
+                        ->icon('bs.list')
+                        ->route('platform.menu')
+                        ->title('Menu Management'),
+                ]),
 
             Menu::make('Sample Screen')
                 ->icon('bs.collection')
@@ -90,11 +105,6 @@ class PlatformProvider extends OrchidServiceProvider
                 ->url('https://github.com/orchidsoftware/platform/blob/master/CHANGELOG.md')
                 ->target('_blank')
                 ->badge(fn () => Dashboard::version(), Color::DARK),
-
-            Menu::make('Домены')
-                ->icon('globe')
-                ->route('platform.domains')
-                ->title('Управление доменами'),
         ];
     }
 

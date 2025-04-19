@@ -17,9 +17,9 @@ use App\Orchid\Screens\Role\RoleListScreen;
 use App\Orchid\Screens\User\UserEditScreen;
 use App\Orchid\Screens\User\UserListScreen;
 use App\Orchid\Screens\User\UserProfileScreen;
-use App\Orchid\Screens\DomainScreen;
 use App\Orchid\Screens\DomainListScreen;
 use App\Orchid\Screens\DomainEditScreen;
+use App\Orchid\Screens\MenuItemScreen;
 use Illuminate\Support\Facades\Route;
 use Tabuna\Breadcrumbs\Trail;
 
@@ -104,8 +104,7 @@ Route::screen('/examples/grid', ExampleGridScreen::class)->name('platform.exampl
 Route::screen('/examples/charts', ExampleChartsScreen::class)->name('platform.example.charts');
 Route::screen('/examples/cards', ExampleCardsScreen::class)->name('platform.example.cards');
 
-// Route::screen('idea', Idea::class, 'platform.screens.idea');
-
+// Platform > Domains
 Route::screen('domains', DomainListScreen::class)
     ->name('platform.domains')
     ->breadcrumbs(fn (Trail $trail) => $trail
@@ -123,3 +122,7 @@ Route::screen('domains/{domain}/edit', DomainEditScreen::class)
     ->breadcrumbs(fn (Trail $trail, $domain) => $trail
         ->parent('platform.domains')
         ->push('Редактирование домена', route('platform.domains.edit', $domain)));
+
+// Platform > Menu
+Route::screen('menu', MenuItemScreen::class)
+    ->name('platform.menu');

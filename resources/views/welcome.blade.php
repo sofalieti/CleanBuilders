@@ -9,18 +9,42 @@
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     </head>
     <body>
-        <!-- Header -->
-        <header class="header">
+        <!-- Header with Logo and Banner -->
+        <header class="site-header">
             <div class="container">
-                <div class="header-content">
-                    @if($domain->attachment()->where('group', 'logo')->first())
-                        <div class="logo">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        @if($domain->attachment()->where('group', 'logo')->first())
                             <img src="{{ $domain->attachment()->where('group', 'logo')->first()->url() }}" 
-                                 alt="{{ $domain->title }}" 
-                                 class="img-fluid">
-                        </div>
-                    @endif
-                    <h1 class="site-title">{{ $domain->title }}</h1>
+                                 alt="Logo" 
+                                 class="logo-img">
+                        @endif
+                    </div>
+                    <div class="col-md-9">
+                        <nav class="main-menu">
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                        Services
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Sauna Repair</a></li>
+                                        <li><a class="dropdown-item" href="#">Maintenance</a></li>
+                                        <li><a class="dropdown-item" href="#">Installation</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </header>
@@ -44,7 +68,7 @@
         <!-- About Section -->
         <section class="section bg-light"> 
             <div class="container">
-                <h2 class="text-center section-title">Our Services 2</h2>
+                <h2 class="text-center section-title">Our Services</h2>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="feature-card text-center">
@@ -90,7 +114,7 @@
         @if($domain->attachment->count() > 0)
         <section class="section">
             <div class="container">
-                <h2 class="text-center section-title">Галерея</h2>
+                <h2 class="text-center section-title">Gallery</h2>
                 <div class="row">
                     @foreach($domain->attachment as $image)
                     <div class="col-md-4 mb-4">
@@ -203,7 +227,7 @@
                     requestAnimationFrame(updateParallax);
                 });
 
-                // Инициализация при загрузке
+                // Initialize on load
                 updateParallax();
             });
         </script>
