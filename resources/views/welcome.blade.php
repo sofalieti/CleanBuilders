@@ -23,25 +23,26 @@
                     <div class="col-md-9">
                         <nav class="main-menu">
                             <ul class="nav justify-content-end">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Home</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                        Services
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Sauna Repair</a></li>
-                                        <li><a class="dropdown-item" href="#">Maintenance</a></li>
-                                        <li><a class="dropdown-item" href="#">Installation</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#about">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contact</a>
-                                </li>
+                                @foreach($menuItems as $item)
+                                    @if($item->children->isEmpty())
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ $item->link }}">{{ $item->title }}</a>
+                                        </li>
+                                    @else
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="{{ $item->link }}" role="button" data-bs-toggle="dropdown">
+                                                {{ $item->title }}
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                @foreach($item->children as $child)
+                                                    <li>
+                                                        <a class="dropdown-item" href="{{ $child->link }}">{{ $child->title }}</a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </li>
+                                    @endif
+                                @endforeach
                             </ul>
                         </nav>
                     </div>
