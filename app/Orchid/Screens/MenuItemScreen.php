@@ -5,16 +5,15 @@ namespace App\Orchid\Screens;
 use App\Models\Domain;
 use App\Models\MenuItem;
 use Illuminate\Http\Request;
-use Orchid\Screen\Actions\Button;
 use Orchid\Screen\Actions\ModalToggle;
 use Orchid\Screen\Fields\CheckBox;
 use Orchid\Screen\Fields\Input;
 use Orchid\Screen\Fields\Relation;
-use Orchid\Screen\Fields\Select;
 use Orchid\Screen\Screen;
 use Orchid\Screen\TD;
 use Orchid\Support\Facades\Layout;
 use Orchid\Support\Facades\Toast;
+use Orchid\Screen\Actions\Button;
 
 class MenuItemScreen extends Screen
 {
@@ -98,13 +97,22 @@ class MenuItemScreen extends Screen
                 TD::make(__('Actions'))
                     ->align(TD::ALIGN_CENTER)
                     ->width('100px')
-                    ->render(fn (MenuItem $item) => ModalToggle::make('Edit')
-                        ->modal('menuItemModal')
-                        ->method('createOrUpdate')
-                        ->modalTitle('Edit Menu Item')
-                        ->asyncParameters([
-                            'menu_item' => $item->id
-                        ])),
+                    ->render(fn (MenuItem $item) => 
+                        Button::make('Delete')
+                            ->method('remove')
+                            ->parameters(['menu_item' => $item->id])
+                            ->class('btn btn-danger btn-sm')
+                            ->icon('trash')
+                            ->confirm('Are you sure you want to delete this menu item?')
+                            ->render() .
+                        ModalToggle::make('Edit')
+                            ->modal('menuItemModal')
+                            ->method('createOrUpdate')
+                            ->modalTitle('Edit Menu Item')
+                            ->asyncParameters([
+                                'menu_item' => $item->id
+                            ])
+                    ),
             ]),
 
             Layout::modal('menuItemModal', Layout::rows([
@@ -115,11 +123,11 @@ class MenuItemScreen extends Screen
                     ->title('Title')
                     ->placeholder('Enter title')
                     ->required(),
-
+                    
                 Input::make('menu_item.link')
                     ->title('Link')
                     ->placeholder('Enter link'),
-
+                    
                 Input::make('menu_item.icon')
                     ->title('Icon')
                     ->placeholder('Enter icon class'),
@@ -211,5 +219,43 @@ class MenuItemScreen extends Screen
         }
 
         Toast::info('Menu item was saved successfully!');
+    }
+
+    /**
+     * @param MenuItem $menu_item
+     * @return void
+     */
+    public function remove(MenuItem $menu_item): void
+    {
+        try {
+            \Log::info('Attempting to delete menu item', ['id' => $menu_item->id]);
+            
+            // Проверяем, существует ли пункт меню
+            if (!$menu_item->exists) {
+                \Log::error('Menu item not found', ['id' => $menu_item->id]);
+                Toast::error('Пункт меню не найден');
+                return;
+            }
+            
+            // Удаляем связи с доменами
+            $menu_item->domains()->detach();
+            
+            // Удаляем сам пункт меню
+            $deleted = $menu_item->delete();
+            
+            if ($deleted) {
+                \Log::info('Menu item deleted successfully', ['id' => $menu_item->id]);
+                Toast::info('Пункт меню успешно удален');
+            } else {
+                \Log::error('Failed to delete menu item', ['id' => $menu_item->id]);
+                Toast::error('Не удалось удалить пункт меню');
+            }
+        } catch (\Exception $e) {
+            \Log::error('Error deleting menu item', [
+                'id' => $menu_item->id,
+                'error' => $e->getMessage()
+            ]);
+            Toast::error('Ошибка при удалении пункта меню: ' . $e->getMessage());
+        }
     }
 } 
