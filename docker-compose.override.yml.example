@@ -1,16 +1,16 @@
 version: '3'
 
 services:
-  php:
+  cleanbuilders-php:
     build:
       context: .
       dockerfile: .docker/php/Dockerfile
     volumes:
       - .:/var/www
     networks:
-      - app-network
+      - cleanbuilders-network
 
-  nginx:
+  cleanbuilders-nginx:
     image: nginx:alpine
     ports:
       - "80:80"
@@ -18,9 +18,9 @@ services:
       - .:/var/www
       - .docker/nginx/conf.d:/etc/nginx/conf.d
     networks:
-      - app-network
+      - cleanbuilders-network
 
-  db:
+  cleanbuilders-db:
     image: mysql:8.1
     environment:
       MYSQL_DATABASE: laravel
@@ -30,20 +30,20 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - dbdata:/var/lib/mysql
+      - cleanbuilders-dbdata:/var/lib/mysql
     networks:
-      - app-network
+      - cleanbuilders-network
 
-  redis:
+  cleanbuilders-redis:
     image: redis:alpine
     ports:
       - "6379:6379"
     networks:
-      - app-network
+      - cleanbuilders-network
 
 networks:
-  app-network:
+  cleanbuilders-network:
     driver: bridge
 
 volumes:
-  dbdata: 
+  cleanbuilders-dbdata: 
