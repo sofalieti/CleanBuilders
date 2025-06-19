@@ -32,15 +32,15 @@ services:
         ports:
             - 3306:3306
         volumes:
-            - .docker/db/cleanbuilders-data:/var/lib/mysql
+            - .docker/db/cleanbuilders-dbdata:/var/lib/mysql
             - .docker/logs:/var/log/mysql
             - .docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
             - .docker/db/sql:/docker-entrypoint-initdb.d
         environment:
-            MYSQL_ROOT_PASSWORD: root
-            MYSQL_DATABASE: refactorian
-            MYSQL_USER: refactorian
-            MYSQL_PASSWORD: refactorian
+            MYSQL_ROOT_PASSWORD: cleanbuilders
+            MYSQL_DATABASE: cleanbuilders
+            MYSQL_USER: cleanbuilders
+            MYSQL_PASSWORD: cleanbuilders
 
     ####################################################################################################
     # phpMyAdmin

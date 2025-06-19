@@ -6,11 +6,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-3">
-                    @if($domain->attachment()->where('group', 'logo')->first())
-                        <img src="{{ $domain->attachment()->where('group', 'logo')->first()->url() }}" 
-                             alt="Logo" 
-                             class="logo-img">
-                    @endif
+                    <img src="/images/logo.png" alt="Логотип" style="max-width: 200px; margin: 20px auto; display: block;" />
                 </div>
                 <div class="col-md-9">
                     <nav class="main-menu">
@@ -44,44 +40,40 @@
 
     <!-- Hero Banner -->
     <section class="hero-banner">
-        @if($domain->attachment()->where('group', 'banner')->first())
-            <div class="parallax-bg" style="background-image: url('{{ $domain->attachment()->where('group', 'banner')->first()->url() }}');"></div>
-        @else
-            <div class="parallax-bg"></div>
-        @endif
+        <div class="parallax-bg" style="background-image: url('/images/banner.jpg'); height: 300px; background-size: cover; background-position: center;"></div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="display-4 fw-bold mb-4">{{ $domain->title }}</h1>
-                <p class="lead mb-4">{{ $domain->description }}</p>
+                <h1 class="display-4 fw-bold mb-4">Добро пожаловать на сайт!</h1>
+                <p class="lead mb-4">Это пример статического описания вашего проекта. Здесь вы можете разместить любую информацию о компании, услугах или преимуществах.</p>
                 <a href="#contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="section bg-light"> 
+    <section class="section bg-light">
         <div class="container">
-            <h2 class="text-center section-title">Our Services</h2>
+            <h2 class="text-center section-title">Наши услуги</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="feature-card text-center">
                         <i class="fas fa-tools feature-icon"></i>
-                        <h3>Repair Services</h3>
-                        <p>Professional repair of all infrared sauna components including heaters, control panels, and wiring.</p>
+                        <h3>Ремонт</h3>
+                        <p>Профессиональный ремонт оборудования и техники.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card text-center">
                         <i class="fas fa-cogs feature-icon"></i>
-                        <h3>Maintenance</h3>
-                        <p>Regular maintenance services to keep your sauna running efficiently and extend its lifespan.</p>
+                        <h3>Обслуживание</h3>
+                        <p>Регулярное техническое обслуживание для долгой работы.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card text-center">
                         <i class="fas fa-home feature-icon"></i>
-                        <h3>Installation</h3>
-                        <p>Expert installation of new infrared saunas with proper setup and safety checks.</p>
+                        <h3>Установка</h3>
+                        <p>Профессиональный монтаж и настройка оборудования.</p>
                     </div>
                 </div>
             </div>
@@ -107,7 +99,7 @@
     @if($domain->attachment->count() > 0)
     <section class="section">
         <div class="container">
-            <h2 class="text-center section-title">Gallery</h2>
+            <h2 class="text-center section-title">Наши работы</h2>
             <div class="row">
                 @foreach($domain->attachment as $image)
                 <div class="col-md-4 mb-4">
@@ -154,14 +146,9 @@
     <!-- Map Section -->
     <section class="section bg-light">
         <div class="container">
+            <h2 class="text-center mb-4">Где мы находимся</h2>
             <div class="map-container">
-                <iframe src="{{ $domain->google_maps }}" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                </iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aexample" width="100%" height="300" frameborder="0"></iframe>
             </div>
         </div>
     </section>

@@ -18,16 +18,9 @@ class HomeController extends Controller
 
     public function index(Request $request)
     {
-        // Получаем домен из запроса
-        $host = $request->getHost();
-        
-        // Ищем домен в базе данных
-        $domain = Domain::where('name', $host)->first();
+        $menuItems = $this->menuService->getMenuItems();
 
-        $menuItems = $this->menuService->getMenuItems($domain);
-
-        return view('welcome', [
-            'domain' => $domain,
+        return view('home', [
             'menuItems' => $menuItems
         ]);
     }
