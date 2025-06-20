@@ -39,7 +39,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="hero-form-content">
+                                <div class="hero-form-content d-none d-lg-block">
                                     <div class="hero-contact-form">
                                         <h3>Get Free Consultation</h3>
                                         <form action="#" method="POST">
@@ -109,7 +109,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="hero-form-content">
+                                <div class="hero-form-content d-none d-lg-block">
                                     <div class="hero-contact-form">
                                         <h3>Get Free Consultation</h3>
                                         <form action="#" method="POST">
@@ -196,15 +196,57 @@
                 </div>
                 <div class="col-lg-6 mb-10 col-md-12 align-self-center order-1 order-lg-2" data-aos="fade-left" data-aos-delay="500">
                     <div class="history-wrapper">
-                        <h1 class="title">Gothic Studio</h1>
+                        <h1 class="title">How We Work</h1>
                         <div class="history-content">
-                            <h4 class="subtitle">Founded in Lebanon in 1967, Archo Architecture Company (KCC) has grown to become one of the Middle East's leading construction contractors.</h4>
-                            <p>We specialise in complex and prestigious construction and infrastructure projects. Our portfolio includes some of the region's most iconic landmarks, from super high-rise luxury developments, to five star hotels, hospitals and intricately sophisticated smart buildings. </p>
-                            <p>We have compiled an extensive list of other area clinics and health resources, so that when someone calls.</p>
+                            <p class="subtitle text-muted" style="font-size: 16px; line-height: 1.5;">Simple and transparent process from consultation to project completion.</p>
+                            
+                            <!-- Work Process List Start -->
+                            <div class="advantages-list">
+                                <div class="advantage-item d-flex align-items-start mb-3">
+                                    <div class="advantage-icon me-3 flex-shrink-0">
+                                        <i class="icofont-check-circled text-primary" style="font-size: 20px;"></i>
+                                    </div>
+                                    <div class="advantage-content">
+                                        <h5 class="mb-1">Schedule an Appointment</h5>
+                                        <p class="mb-0">Call 855-355-0515 to book your free consultation at a convenient time.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="advantage-item d-flex align-items-start mb-3">
+                                    <div class="advantage-icon me-3 flex-shrink-0">
+                                        <i class="icofont-check-circled text-primary" style="font-size: 20px;"></i>
+                                    </div>
+                                    <div class="advantage-content">
+                                        <h5 class="mb-1">Receive a Quote</h5>
+                                        <p class="mb-0">Our specialist visits, takes measurements, and provides your detailed quote within 2 days.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="advantage-item d-flex align-items-start mb-3">
+                                    <div class="advantage-icon me-3 flex-shrink-0">
+                                        <i class="icofont-check-circled text-primary" style="font-size: 20px;"></i>
+                                    </div>
+                                    <div class="advantage-content">
+                                        <h5 class="mb-1">Sign a Contract</h5>
+                                        <p class="mb-0">After contract approval, we review details and order your materials.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="advantage-item d-flex align-items-start mb-3">
+                                    <div class="advantage-icon me-3 flex-shrink-0">
+                                        <i class="icofont-check-circled text-primary" style="font-size: 20px;"></i>
+                                    </div>
+                                    <div class="advantage-content">
+                                        <h5 class="mb-1">Project Completion</h5>
+                                        <p class="mb-0">Certified installers complete the work and ensure your complete satisfaction.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Work Process List End -->
                         </div>
                         <div class="signature">
                             <img src="{{ asset('assets/images/icon/sign.png') }}" alt="Sign">
-                            <h4 class="title">Daniel JR</h4>
+                            <h4 class="title">CleanBuilders Team</h4>
                         </div>
                     </div>
                 </div>
@@ -213,6 +255,8 @@
     </div>
     <!-- History Section End -->
 
+
+
     <!-- Services Section Start -->
     <div class="section section-padding-top bg-light">
         <div class="container">
@@ -220,61 +264,132 @@
                 <div class="col-12">
                     <!-- Section Title Start -->
                     <div class="section-title" data-aos="fade-up" data-aos-delay="300">
-                        <h2 class="title">Why Choose Us</h2>
+                        <h2 class="title">What We Work With</h2>
                     </div>
                     <!-- Section Title End -->
                 </div>
-
-                <div class="col-12">
-                    <div class="service-inner-container">
-
-                        <!-- Service Block Start -->
-                        <div class="service-block" data-aos="fade-up" data-aos-delay="300">
-                            <div class="inner-box">
-                                <h5 class="title">
-                                    <a href="#">Professional Roofing</a>
-                                </h5>
-                                <p>Complete roofing solutions including repairs, replacements, and new installations. We work with all materials and provide lifetime warranties.</p>
-                                <div class="icon-link-bottom">
-                                    <i class="icon icofont-building-alt"></i>
-                                    <a href="#" class="more">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Service Block End -->
-
-                        <!-- Service Block Start -->
-                        <div class="service-block" data-aos="fade-up" data-aos-delay="400">
-                            <div class="inner-box">
-                                <h5 class="title">
-                                    <a href="#">Quality Siding</a>
-                                </h5>
-                                <p>Transform your home's exterior with premium siding installation. Vinyl, wood, fiber cement - we handle all types with expert precision.</p>
-                                <div class="icon-link-bottom">
-                                    <i class="icon icofont-home"></i>
-                                    <a href="#" class="more">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Service Block End -->
-
-                        <!-- Service Block Start -->
-                        <div class="service-block" data-aos="fade-up" data-aos-delay="500">
-                            <div class="inner-box">
-                                <h5 class="title">
-                                    <a href="#">Custom Decks</a>
-                                </h5>
-                                <p>Beautiful outdoor living spaces with custom deck design and installation. From composite to hardwood, we create your perfect retreat.</p>
-                                <div class="icon-link-bottom">
-                                    <i class="icon icofont-architecture-alt"></i>
-                                    <a href="#" class="more">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Service Block End -->
-                    </div>
-                </div>
             </div>
+
+            <div class="row mb-n8">
+                <!-- Roofing Service Start -->
+                <div class="col-lg-4 col-md-6 mb-8" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#" class="service-item text-center d-block text-decoration-none text-dark position-relative service-link">
+                        <!-- Service Image Start -->
+                        <div class="service-image mb-4">
+                            <img src="{{ asset('assets/images/gallery/1-1.jpg') }}" alt="Roofing Services" class="img-fluid rounded" style="height: 250px; width: 100%; object-fit: cover;">
+                        </div>
+                        <!-- Service Image End -->
+                        
+                        <!-- Service Content Start -->
+                        <div class="service-content">
+                            <h4 class="service-title mb-3">Roofing</h4>
+                            <p class="service-description mb-4">Complete roofing solutions including repairs, replacements, and new installations.</p>
+                            
+                            <!-- Service Link Arrow Start -->
+                            <div class="service-arrow">
+                                <span class="arrow-text">Learn More</span>
+                                <i class="icofont-long-arrow-right arrow-icon"></i>
+                            </div>
+                            <!-- Service Link Arrow End -->
+                        </div>
+                        <!-- Service Content End -->
+                    </a>
+                </div>
+                <!-- Roofing Service End -->
+                
+                <!-- Siding Service Start -->
+                <div class="col-lg-4 col-md-6 mb-8" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#" class="service-item text-center d-block text-decoration-none text-dark position-relative service-link">
+                        <!-- Service Image Start -->
+                        <div class="service-image mb-4">
+                            <img src="{{ asset('assets/images/gallery/1-2.jpg') }}" alt="Siding Services" class="img-fluid rounded" style="height: 250px; width: 100%; object-fit: cover;">
+                                </div>
+                        <!-- Service Image End -->
+                        
+                        <!-- Service Content Start -->
+                        <div class="service-content">
+                            <h4 class="service-title mb-3">Siding</h4>
+                            <p class="service-description mb-4">Premium siding installation with vinyl, wood, fiber cement, and composite materials.</p>
+                            
+                            <!-- Service Link Arrow Start -->
+                            <div class="service-arrow">
+                                <span class="arrow-text">Learn More</span>
+                                <i class="icofont-long-arrow-right arrow-icon"></i>
+                            </div>
+                            <!-- Service Link Arrow End -->
+                        </div>
+                        <!-- Service Content End -->
+                    </a>
+                </div>
+                <!-- Siding Service End -->
+                
+                <!-- Decks Service Start -->
+                <div class="col-lg-4 col-md-6 mb-8" data-aos="fade-up" data-aos-delay="500">
+                    <a href="#" class="service-item text-center d-block text-decoration-none text-dark position-relative service-link">
+                        <!-- Service Image Start -->
+                        <div class="service-image mb-4">
+                            <img src="{{ asset('assets/images/gallery/1-3.jpg') }}" alt="Deck Services" class="img-fluid rounded" style="height: 250px; width: 100%; object-fit: cover;">
+                                </div>
+                        <!-- Service Image End -->
+                        
+                        <!-- Service Content Start -->
+                        <div class="service-content">
+                            <h4 class="service-title mb-3">Decks</h4>
+                            <p class="service-description mb-4">Custom deck design and installation from composite to hardwood materials.</p>
+                            
+                            <!-- Service Link Arrow Start -->
+                            <div class="service-arrow">
+                                <span class="arrow-text">Learn More</span>
+                                <i class="icofont-long-arrow-right arrow-icon"></i>
+                            </div>
+                            <!-- Service Link Arrow End -->
+                        </div>
+                        <!-- Service Content End -->
+                    </a>
+                </div>
+                <!-- Decks Service End -->
+            </div>
+            
+            <!-- Custom CSS for service links animation -->
+            <style>
+                .service-link {
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    padding: 20px;
+                    border-radius: 10px;
+                    background: white;
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                }
+                
+                .service-link:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+                    color: inherit !important;
+                }
+                
+                .service-arrow {
+                    color: var(--primary-color, #3a952a);
+                    font-weight: 600;
+                    transition: all 0.3s ease;
+                }
+                
+                .service-link:hover .service-arrow {
+                    color: var(--primary-hover, #2e7a22);
+                }
+                
+                .arrow-icon {
+                    margin-left: 8px;
+                    transition: transform 0.3s ease;
+                    font-size: 16px;
+                }
+                
+                .service-link:hover .arrow-icon {
+                    transform: translateX(5px);
+                }
+                
+                .arrow-text {
+                    font-size: 14px;
+                }
+            </style>
         </div>
     </div>
     <!-- Services Section End -->
@@ -287,24 +402,24 @@
                     <div class="col-sm-4 col-6 mb-8" data-aos="fade-up" data-aos-delay="300">
                         <!-- Single Funfact Start -->
                         <div class="single-funfact">
-                            <span class="odometer" data-count-to="8000"></span>
-                            <h6 class="title">Partner <br> worldwide</h6>
+                            <span class="odometer" data-count-to="7"></span>
+                            <h6 class="title">Years <br> in Business</h6>
                         </div>
                         <!-- Single Funfact End -->
                     </div>
                     <div class="col-sm-4 col-6 mb-8" data-aos="fade-up" data-aos-delay="400">
                         <!-- Single Funfact Start -->
                         <div class="single-funfact">
-                            <span class="odometer" data-count-to="1250"></span>
-                            <h4 class="title">employees and <br> staffs</h4>
+                            <span class="odometer" data-count-to="35"></span>
+                            <h4 class="title">Satisfied <br> Clients</h4>
                         </div>
                         <!-- Single Funfact End -->
                     </div>
                     <div class="col-sm-4 col-6 mb-8" data-aos="fade-up" data-aos-delay="500">
                         <!-- Single Funfact Start -->
                         <div class="single-funfact">
-                            <span class="odometer" data-count-to="904"></span>
-                            <h5 class="title">project completed <br> on 60 countries</h5>
+                            <span class="odometer" data-count-to="43"></span>
+                            <h5 class="title">Homes <br> Renovated</h5>
                         </div>
                         <!-- Single Funfact End -->
                     </div>
@@ -314,277 +429,7 @@
     </div>
     <!-- Funfact Section End -->
 
-    <!-- Project Tab Section Start -->
-    <div class="section bg-light">
-        <div class="container">
-            <div class="row" data-aos="fade-up" data-aos-delay="300">
 
-                <!-- Section Title Start -->
-                <div class="col-xl-3 col-md-12">
-                    <div class="section-title mb-0">
-                        <h2 class="title">latest Works</h2>
-                    </div>
-                </div>
-                <!-- Section Title End -->
-
-                <!-- Tab Start -->
-                <div class="col-xl-7 col-md-8 col-sm-12">
-
-                    <!-- Section Title & Product Tab Start -->
-                    <div class="section-tabs-header">
-
-                        <!-- Tabs Header Start -->
-                        <ul class="tabs-header-nav nav">
-                            <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tab-item-all">All</a></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab-item-architecture">Architecture</a></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab-item-all">Interior</a></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab-item-architecture">Landscape</a></li>
-                        </ul>
-                        <!-- Tabs Header End -->
-
-                    </div>
-                    <!-- Section Title & Product Tab End -->
-                </div>
-                <!-- Tab End -->
-
-                <!-- All Project Button Start -->
-                <div class="col-xl-2 col-md-4 col-sm-12">
-                    <div class="all-project-btn">
-                        <a href="#">See All Projects <i class="arrow icofont-rounded-right"></i></a>
-                    </div>
-                </div>
-                <!-- All Project Button End -->
-
-            </div>
-        </div>
-        <div class="container-auto">
-            <!-- Tab Content Start -->
-            <div class="tab-content" data-aos="fade-up" data-aos-delay="400">
-                <div class="tab-pane fade show active" id="tab-item-all">
-                    <div class="tab-pane-carousel position-relative">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-
-                                <div class="swiper-slide">
-                                    <!-- Single Project Slide Start -->
-                                    <div class="single-project-slide">
-
-                                        <!-- Thumb Start -->
-                                        <div class="thumb">
-                                            <a href="#" class="image">
-                                                <img class="fit-image" src="{{ asset('assets/images/gallery/1-1.jpg') }}" alt="Product" />
-                                            </a>
-                                        </div>
-                                        <!-- Thumb End -->
-
-                                        <!-- Content Start -->
-                                        <div class="content">
-                                            <h4 class="subtitle">Residential</h4>
-                                            <h3 class="title"><a href="#">Cubic Villa</a></h3>
-                                        </div>
-                                        <!-- Content End -->
-
-                                    </div>
-                                    <!-- Single Project Slide End -->
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <!-- Single Project Slide Start -->
-                                    <div class="single-project-slide">
-
-                                        <!-- Thumb Start -->
-                                        <div class="thumb">
-                                            <a href="#" class="image">
-                                                <img class="fit-image" src="{{ asset('assets/images/gallery/1-2.jpg') }}" alt="Product" />
-                                            </a>
-                                        </div>
-                                        <!-- Thumb End -->
-
-                                        <!-- Content Start -->
-                                        <div class="content">
-                                            <h4 class="subtitle">Architecture</h4>
-                                            <h3 class="title"><a href="#">Culture House</a></h3>
-                                        </div>
-                                        <!-- Content End -->
-
-                                    </div>
-                                    <!-- Single Project Slide End -->
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <!-- Single Project Slide Start -->
-                                    <div class="single-project-slide">
-
-                                        <!-- Thumb Start -->
-                                        <div class="thumb">
-                                            <a href="#" class="image">
-                                                <img class="fit-image" src="{{ asset('assets/images/gallery/1-3.jpg') }}" alt="Product" />
-                                            </a>
-                                        </div>
-                                        <!-- Thumb End -->
-
-                                        <!-- Content Start -->
-                                        <div class="content">
-                                            <h4 class="subtitle">Commercial</h4>
-                                            <h3 class="title"><a href="#">ABC Financial Bank</a></h3>
-                                        </div>
-                                        <!-- Content End -->
-
-                                    </div>
-                                    <!-- Single Project Slide End -->
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <!-- Single Project Slide Start -->
-                                    <div class="single-project-slide">
-
-                                        <!-- Thumb Start -->
-                                        <div class="thumb">
-                                            <a href="#" class="image">
-                                                <img class="fit-image" src="{{ asset('assets/images/gallery/1-4.jpg') }}" alt="Product" />
-                                            </a>
-                                        </div>
-                                        <!-- Thumb End -->
-
-                                        <!-- Content Start -->
-                                        <div class="content">
-                                            <h4 class="subtitle">Interior</h4>
-                                            <h3 class="title"><a href="#">B6-No.5 OLA Tower</a></h3>
-                                        </div>
-                                        <!-- Content End -->
-
-                                    </div>
-                                    <!-- Single Project Slide End -->
-                                </div>
-
-                            </div>
-
-                            <!-- Swiper Pagination Start -->
-                            <div class="swiper-pagination d-none"></div>
-                            <!-- Swiper Pagination End -->
-
-                            <!-- Swiper Navigation Start -->
-                            <div class="tab-carousel-prev swiper-button-prev"><i class="icofont-thin-left"></i></div>
-                            <div class="tab-carousel-next swiper-button-next"><i class="icofont-thin-right"></i></div>
-                            <!-- Swiper Navigation End -->
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="tab-item-architecture">
-                    <div class="tab-pane-carousel-two position-relative">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-
-                                <div class="swiper-slide">
-                                    <!-- Single Project Slide Start -->
-                                    <div class="single-project-slide">
-
-                                        <!-- Thumb Start -->
-                                        <div class="thumb">
-                                            <a href="#" class="image">
-                                                <img class="fit-image" src="{{ asset('assets/images/gallery/2-1.jpg') }}" alt="Product" />
-                                            </a>
-                                        </div>
-                                        <!-- Thumb End -->
-
-                                        <!-- Content Start -->
-                                        <div class="content">
-                                            <h4 class="subtitle">Residential</h4>
-                                            <h3 class="title"><a href="#">Cubic Villa</a></h3>
-                                        </div>
-                                        <!-- Content End -->
-
-                                    </div>
-                                    <!-- Single Project Slide End -->
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <!-- Single Project Slide Start -->
-                                    <div class="single-project-slide">
-
-                                        <!-- Thumb Start -->
-                                        <div class="thumb">
-                                            <a href="#" class="image">
-                                                <img class="fit-image" src="{{ asset('assets/images/gallery/2-2.jpg') }}" alt="Product" />
-                                            </a>
-                                        </div>
-                                        <!-- Thumb End -->
-
-                                        <!-- Content Start -->
-                                        <div class="content">
-                                            <h4 class="subtitle">Architecture</h4>
-                                            <h3 class="title"><a href="#">Culture House</a></h3>
-                                        </div>
-                                        <!-- Content End -->
-
-                                    </div>
-                                    <!-- Single Project Slide End -->
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <!-- Single Project Slide Start -->
-                                    <div class="single-project-slide">
-
-                                        <!-- Thumb Start -->
-                                        <div class="thumb">
-                                            <a href="#" class="image">
-                                                <img class="fit-image" src="{{ asset('assets/images/gallery/2-3.jpg') }}" alt="Product" />
-                                            </a>
-                                        </div>
-                                        <!-- Thumb End -->
-
-                                        <!-- Content Start -->
-                                        <div class="content">
-                                            <h4 class="subtitle">Commercial</h4>
-                                            <h3 class="title"><a href="#">ABC Financial Bank</a></h3>
-                                        </div>
-                                        <!-- Content End -->
-
-                                    </div>
-                                    <!-- Single Project Slide End -->
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <!-- Single Project Slide Start -->
-                                    <div class="single-project-slide">
-
-                                        <!-- Thumb Start -->
-                                        <div class="thumb">
-                                            <a href="#" class="image">
-                                                <img class="fit-image" src="{{ asset('assets/images/gallery/2-4.jpg') }}" alt="Product" />
-                                            </a>
-                                        </div>
-                                        <!-- Thumb End -->
-
-                                        <!-- Content Start -->
-                                        <div class="content">
-                                            <h4 class="subtitle">Interior</h4>
-                                            <h3 class="title"><a href="#">B6-No.5 OLA Tower</a></h3>
-                                        </div>
-                                        <!-- Content End -->
-
-                                    </div>
-                                    <!-- Single Project Slide End -->
-                                </div>
-
-                            </div>
-
-                            <!-- Swiper Pagination Start -->
-                            <div class="swiper-pagination d-none"></div>
-                            <!-- Swiper Pagination End -->
-
-                            <!-- Swiper Navigation Start -->
-                            <div class="tab-carousel-prev swiper-button-prev"><i class="icofont-thin-left"></i></div>
-                            <div class="tab-carousel-next swiper-button-next"><i class="icofont-thin-right"></i></div>
-                            <!-- Swiper Navigation End -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Tab Content End -->
-        </div>
-    </div>
-    <!-- Project Tab Section End -->
 
     <!-- Client Section Start -->
     <div class="section section-padding-top">
@@ -592,7 +437,7 @@
             <div class="row">
                 <div class="col-12 position-relative">
                     <div class="section-title client-title" data-aos="fade-up" data-aos-delay="300">
-                        <h2 class="title">+2,500 clients love us</h2>
+                        <h2 class="title">What Our Clients Say</h2>
                     </div>
                     <div class="client-crousel" data-aos="fade-up" data-aos-delay="300">
                         <div class="swiper-container">
@@ -616,10 +461,10 @@
                                         <div class="client-content">
                                             <!-- Name Start -->
                                             <h6 class="name">
-                                                <a href="#">Ryan Betthalyn</a> / <span> Director at Chobham Manor</span>
+                                                <a href="#">Sarah Martinez</a> / <span> Homeowner, San Jose</span>
                                             </h6>
                                             <!-- Name End -->
-                                            <p>Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</p>
+                                            <p>CleanBuilders replaced our entire roof after storm damage. Their team was professional, punctual, and the quality of work exceeded our expectations. The new GAF shingles look amazing and we feel secure knowing we have a 10-year warranty!</p>
                                         </div>
                                         <!-- Client Content End -->
                                     </div>
@@ -644,10 +489,10 @@
                                         <div class="client-content">
                                             <!-- Name Start -->
                                             <h6 class="name">
-                                                <a href="#">Bobs Hanely</a> / <span> Director at Spotify</span>
+                                                <a href="#">Michael Chen</a> / <span> Homeowner, Fremont</span>
                                             </h6>
                                             <!-- Name End -->
-                                            <p>Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</p>
+                                            <p>We hired CleanBuilders for new siding and a custom deck. From the free consultation to project completion, everything was handled professionally. The James Hardie siding transformed our home's appearance, and the deck is perfect for entertaining guests!</p>
                                         </div>
                                         <!-- Client Content End -->
                                     </div>
@@ -724,75 +569,5 @@
     </div>
     <!-- Brand Logo End -->
 
-    <!-- News Section -->
-    <div class="section news-section">
-        <div class="container-fluid p-0">
-            <div class="row g-0">
-                <!-- News Block -->
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="100">
-                    <div class="news-block">
-                        <div class="image">
-                            <a href="#"><img class="fit-image" src="{{ asset('assets/images/news/1.jpg') }}" alt="News Image" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <ul class="info-list">
-                                <li>Jan 28, 2021</li>
-                                <li>news</li>
-                            </ul>
-                            <h4 class="title"><a href="#">The Way Of Building</a></h4>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- News Block -->
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="300">
-                    <div class="news-block">
-                        <div class="image">
-                            <a href="#"><img class="fit-image" src="{{ asset('assets/images/news/2.jpg') }}" alt="News Image" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <ul class="info-list">
-                                <li>Mar 08, 2021</li>
-                                <li>inspiration</li>
-                            </ul>
-                            <h4 class="title"><a href="#">The Arch In Modern Architecture, Art & Aesthetic More</a></h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- News Block -->
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="500">
-                    <div class="news-block">
-                        <div class="image">
-                            <a href="#"><img class="fit-image" src="{{ asset('assets/images/news/3.jpg') }}" alt="News Image" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <ul class="info-list">
-                                <li>Apr 18, 2021</li>
-                                <li>tips & tricks</li>
-                            </ul>
-                            <h4 class="title"><a href="#">Spiral Stair, New Interior Design Trends 2020</a></h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- News Block -->
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="700">
-                    <div class="news-block border-right-0">
-                        <div class="image">
-                            <a href="#"><img class="fit-image" src="{{ asset('assets/images/news/4.jpg') }}" alt="News Image" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <ul class="info-list">
-                                <li>Nov 24, 2021</li>
-                                <li>others</li>
-                            </ul>
-                            <h4 class="title"><a href="#">Nordic Interior Style</a></h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End News Section -->
 @endsection  

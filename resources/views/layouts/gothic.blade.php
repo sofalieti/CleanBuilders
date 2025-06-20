@@ -26,6 +26,9 @@
     
     <!-- Custom Gradient CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/custom-gradient.css') }}" />
+    
+    <!-- CleanBuilders Custom CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}" />
 
     @stack('styles')
 </head>

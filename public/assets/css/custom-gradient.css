@@ -47,9 +47,9 @@
     line-height: 1.2 !important;
 }
 
-/* Выделение услуг красным цветом */
+/* Выделение услуг зеленым цветом */
 .hero-slide-content .title .services-highlight {
-    color: #dc3545;
+    color: #3a952a;
     font-weight: 700;
 }
 
@@ -74,17 +74,17 @@
 }
 
 .btn-primary-custom {
-    background-color: #007bff;
+    background: linear-gradient(135deg, #3a952a 0%, #2e7a22 100%);
     color: white;
-    border-color: #007bff;
+    border-color: #3a952a;
 }
 
 .btn-primary-custom:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background: linear-gradient(135deg, #2e7a22 0%, #245c1a 100%);
+    border-color: #2e7a22;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(58, 149, 42, 0.4);
 }
 
 .btn-secondary-custom {
@@ -155,8 +155,8 @@
 
 .form-control:focus {
     outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    border-color: #3a952a;
+    box-shadow: 0 0 0 3px rgba(58, 149, 42, 0.1);
 }
 
 .form-control::placeholder {
@@ -170,7 +170,7 @@ textarea.form-control {
 
 .btn-form-submit {
     width: 100%;
-    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    background: linear-gradient(135deg, #3a952a 0%, #2e7a22 100%);
     color: white;
     border: none;
     padding: 12px 20px;
@@ -182,8 +182,9 @@ textarea.form-control {
 }
 
 .btn-form-submit:hover {
+    background: linear-gradient(135deg, #2e7a22 0%, #245c1a 100%);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+    box-shadow: 0 5px 15px rgba(58, 149, 42, 0.4);
 }
 
 /* Hero Layout with Form */
