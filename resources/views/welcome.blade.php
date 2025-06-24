@@ -39,13 +39,42 @@
     </header>
 
     <!-- Hero Banner -->
-    <section class="hero-banner">
-        <div class="parallax-bg" style="background-image: url('/images/banner.jpg'); height: 300px; background-size: cover; background-position: center;"></div>
+    <section class="hero-banner hero-slide-bg">
+        <div class="parallax-bg" style="background-image: url('/images/banner.jpg'); height: 100vh; background-size: cover; background-position: center;"></div>
         <div class="container">
-            <div class="hero-content">
-                <h1 class="display-4 fw-bold mb-4">Добро пожаловать на сайт!</h1>
-                <p class="lead mb-4">Это пример статического описания вашего проекта. Здесь вы можете разместить любую информацию о компании, услугах или преимуществах.</p>
-                <a href="#contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
+            <div class="hero-content-wrapper">
+                <div class="hero-text-content">
+                    <div class="hero-slide-content">
+                        <h1 class="title">Добро пожаловать на <span class="services-highlight">сайт строительной компании</span>!</h1>
+                        <p class="lead">Это пример статического описания вашего проекта. Здесь вы можете разместить любую информацию о компании, услугах или преимуществах.</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn-custom btn-primary-custom">Получить консультацию</a>
+                            <a href="#services" class="btn-custom btn-secondary-custom">Наши услуги</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-form-content">
+                    <div class="hero-contact-form">
+                        <h3>Get A Free Consult</h3>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Full Name *" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone Number *" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" class="form-control" placeholder="Tell us about your project..." rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn-form-submit">Get My Free Consult</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -177,3 +206,4 @@
     </script>
     @endpush
 @endsection
+

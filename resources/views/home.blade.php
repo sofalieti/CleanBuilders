@@ -32,47 +32,32 @@
                                             Trusted <span class="services-highlight">Roofing, Sidings &</span> <br />
                                             <span class="services-highlight">Decks</span> Professionals in Bay Area
                                         </h2>
-                                        <p>Looking for reliable professionals you can trust with your home? We deliver exceptional craftsmanship and reliable service you can count on for your most important investment.</p>
+                                        <p class="hero-description">Looking for reliable professionals you can trust with your home? We deliver exceptional craftsmanship and reliable service you can count on for your most important investment.</p>
                                         <div class="hero-buttons">
-                                            <a href="#" class="btn-custom btn-primary-custom">View Our Works</a>
-                                            <a href="#" class="btn-custom btn-secondary-custom">Get A Free Consult</a>
+                                            <a href="#" class="btn-custom btn-primary-custom">Get a Free Consult</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="hero-form-content d-none d-lg-block">
                                     <div class="hero-contact-form">
-                                        <h3>Get Free Consultation</h3>
+                                        <h3>Get A Free Consult</h3>
                                         <form action="#" method="POST">
                                             @csrf
                                             <div class="form-group">
-                                                <label for="name">Full Name *</label>
-                                                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                                                <input type="text" id="name" name="name" class="form-control" placeholder="Full Name *" required>
                                             </div>
                                             <div class="form-row">
                                                 <div class="form-group">
-                                                    <label for="phone">Phone Number *</label>
-                                                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+                                                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone Number *" required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="email">Email Address</label>
-                                                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address">
+                                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email Address">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="service">Service Needed</label>
-                                                <select id="service" name="service" class="form-control">
-                                                    <option value="">Select a service</option>
-                                                    <option value="roofing">Roofing</option>
-                                                    <option value="siding">Siding</option>
-                                                    <option value="deck">Deck Installation</option>
-                                                    <option value="other">Other</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="message">Your Message</label>
                                                 <textarea id="message" name="message" class="form-control" placeholder="Tell us about your project..." rows="4"></textarea>
                                             </div>
-                                            <button type="submit" class="btn-form-submit">Send Request</button>
+                                            <button type="submit" class="btn-form-submit">Get My Free Consult</button>
                                         </form>
                                     </div>
                                 </div>
@@ -83,187 +68,106 @@
                     </div>
                     <!-- Hero Slider Item End -->
 
-                    <!-- Hero Slider Item Start -->
-                    <div class="hero-slide-item swiper-slide">
 
-                        <!-- Hero Slider Bg Image Start -->
-                        <div class="hero-slide-bg">
-                            <img src="{{ asset('assets/images/slider/slide-1.jpg') }}" alt="Slider Image" />
-                        </div>
-                        <!-- Hero Slider Bg Image End -->
-
-                        <!-- Hero Slider Content Start -->
-                        <div class="container">
-                            <div class="hero-content-wrapper">
-                                <div class="hero-text-content">
-                                    <div class="hero-slide-content">
-                                        <h4 class="subtitle">Bay Area Professionals</h4>
-                                        <h2 class="title">
-                                            Trusted <span class="services-highlight">Roofing, Sidings &</span> <br />
-                                            <span class="services-highlight">Decks</span> Professionals in Bay Area
-                                        </h2>
-                                        <p>Looking for reliable professionals you can trust with your home? We deliver exceptional craftsmanship and reliable service you can count on for your most important investment.</p>
-                                        <div class="hero-buttons">
-                                            <a href="#" class="btn-custom btn-primary-custom">View Our Works</a>
-                                            <a href="#" class="btn-custom btn-secondary-custom">Get A Free Consult</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hero-form-content d-none d-lg-block">
-                                    <div class="hero-contact-form">
-                                        <h3>Get Free Consultation</h3>
-                                        <form action="#" method="POST">
-                                            @csrf
-                                            <div class="form-group">
-                                                <label for="name2">Full Name *</label>
-                                                <input type="text" id="name2" name="name" class="form-control" placeholder="Enter your full name" required>
-                                            </div>
-                                            <div class="form-row">
-                                                <div class="form-group">
-                                                    <label for="phone2">Phone Number *</label>
-                                                    <input type="tel" id="phone2" name="phone" class="form-control" placeholder="Enter your phone number" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="email2">Email Address</label>
-                                                    <input type="email" id="email2" name="email" class="form-control" placeholder="Enter your email address">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="service2">Service Needed</label>
-                                                <select id="service2" name="service" class="form-control">
-                                                    <option value="">Select a service</option>
-                                                    <option value="roofing">Roofing</option>
-                                                    <option value="siding">Siding</option>
-                                                    <option value="deck">Deck Installation</option>
-                                                    <option value="other">Other</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="message2">Your Message</label>
-                                                <textarea id="message2" name="message" class="form-control" placeholder="Tell us about your project..." rows="4"></textarea>
-                                            </div>
-                                            <button type="submit" class="btn-form-submit">Send Request</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Hero Slider Content End -->
-
-                    </div>
-                    <!-- Hero Slider Item End -->
 
                 </div>
 
-                <!-- Swiper Pagination Start -->
-                <div class="swiper-pagination d-md-none"></div>
-                <!-- Swiper Pagination End -->
 
-                <!-- Swiper Navigation Start -->
-                <div class="home-slider-prev swiper-button-prev d-md-flex d-none"><i class="ion-ios-arrow-thin-left"></i></div>
-                <div class="home-slider-next swiper-button-next d-md-flex d-none"><i class="ion-ios-arrow-thin-right"></i></div>
-                <!-- Swiper Navigation End -->
 
             </div>
         </div>
         <!-- Hero Slider End -->
 
-        <!-- Hero Slider Social Start -->
-        <div class="hero-slider-social">
 
-            <!-- Social Media Link Start -->
-            <div class="social-media-link social-link-white">
-                <a href="#"><i class="icofont-twitter"></i></a>
-                <a href="#"><i class="icofont-facebook"></i></a>
-                <a href="#"><i class="icofont-behance"></i></a>
-            </div>
-            <!-- Social Media Link End -->
-
-        </div>
-        <!-- Hero Slider Social End -->
 
     </div>
     <!-- Hero Section End -->
 
-    <!-- History Section Start -->
-    <div class="section section-padding-top overflow-hidden">
+    <!-- How We Work Section Start -->
+    <div class="section section-padding overflow-hidden how-we-work-section">
         <div class="container">
-            <div class="row mb-n10">
-                <div class="col-lg-6 mb-10 col-md-12 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="500">
-                    <div class="history-image">
-                        <img class="fit-image" src="{{ asset('assets/images/history/history-1.png') }}" alt="">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mb-5">
+                        <h1 class="title">How We Work</h1>
+                        <p class="subtitle text-muted" style="font-size: 16px; line-height: 1.5;">Simple and transparent process from consultation to project completion.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-10 col-md-12 align-self-center order-1 order-lg-2" data-aos="fade-left" data-aos-delay="500">
-                    <div class="history-wrapper">
-                        <h1 class="title">How We Work</h1>
-                        <div class="history-content">
-                            <p class="subtitle text-muted" style="font-size: 16px; line-height: 1.5;">Simple and transparent process from consultation to project completion.</p>
-                            
-                            <!-- Work Process List Start -->
-                            <div class="advantages-list">
-                                <div class="advantage-item d-flex align-items-start mb-3">
-                                    <div class="advantage-icon me-3 flex-shrink-0">
-                                        <i class="icofont-check-circled text-primary" style="font-size: 20px;"></i>
-                                    </div>
-                                    <div class="advantage-content">
-                                        <h5 class="mb-1">Schedule an Appointment</h5>
-                                        <p class="mb-0">Call 855-355-0515 to book your free consultation at a convenient time.</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="advantage-item d-flex align-items-start mb-3">
-                                    <div class="advantage-icon me-3 flex-shrink-0">
-                                        <i class="icofont-check-circled text-primary" style="font-size: 20px;"></i>
-                                    </div>
-                                    <div class="advantage-content">
-                                        <h5 class="mb-1">Receive a Quote</h5>
-                                        <p class="mb-0">Our specialist visits, takes measurements, and provides your detailed quote within 2 days.</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="advantage-item d-flex align-items-start mb-3">
-                                    <div class="advantage-icon me-3 flex-shrink-0">
-                                        <i class="icofont-check-circled text-primary" style="font-size: 20px;"></i>
-                                    </div>
-                                    <div class="advantage-content">
-                                        <h5 class="mb-1">Sign a Contract</h5>
-                                        <p class="mb-0">After contract approval, we review details and order your materials.</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="advantage-item d-flex align-items-start mb-3">
-                                    <div class="advantage-icon me-3 flex-shrink-0">
-                                        <i class="icofont-check-circled text-primary" style="font-size: 20px;"></i>
-                                    </div>
-                                    <div class="advantage-content">
-                                        <h5 class="mb-1">Project Completion</h5>
-                                        <p class="mb-0">Certified installers complete the work and ensure your complete satisfaction.</p>
-                                    </div>
-                                </div>
+            </div>
+            
+            <!-- Work Process Steps Start -->
+            <div class="work-process-container">
+                <div class="row">
+                    <!-- Step 1 -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="process-step text-center">
+                            <div class="process-icon">
+                                <i class="icofont-calendar"></i>
                             </div>
-                            <!-- Work Process List End -->
+                            <div class="process-number">01</div>
+                            <h5 class="process-title">Schedule an Appointment</h5>
+                            <p class="process-description">Call 855-355-0515 to book your free consultation at a convenient time.</p>
                         </div>
-                        <div class="signature">
-                            <img src="{{ asset('assets/images/icon/sign.png') }}" alt="Sign">
-                            <h4 class="title">CleanBuilders Team</h4>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="process-step text-center">
+                            <div class="process-icon">
+                                <i class="icofont-calculator-alt-2"></i>
+                            </div>
+                            <div class="process-number">02</div>
+                            <h5 class="process-title">Receive a Quote</h5>
+                            <p class="process-description">Our specialist visits, takes measurements, and provides your detailed quote within 2 days.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="process-step text-center">
+                            <div class="process-icon">
+                                <i class="icofont-paper"></i>
+                            </div>
+                            <div class="process-number">03</div>
+                            <h5 class="process-title">Sign a Contract</h5>
+                            <p class="process-description">After contract approval, we review details and order your materials.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="process-step text-center">
+                            <div class="process-icon">
+                                <i class="icofont-hammer"></i>
+                            </div>
+                            <div class="process-number">04</div>
+                            <h5 class="process-title">Project Completion</h5>
+                            <p class="process-description">Certified installers complete the work and ensure your complete satisfaction.</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Work Process Steps End -->
+            
+            <div class="text-center mt-5">
+                <a href="tel:855-355-0515" class="btn btn-schedule">
+                    <i class="icofont-phone me-2"></i>
+                    Schedule an Appointment
+                </a>
+            </div>
         </div>
     </div>
-    <!-- History Section End -->
+    <!-- How We Work Section End -->
 
 
 
     <!-- Services Section Start -->
-    <div class="section section-padding-top bg-light">
+    <div class="section section-padding bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <!-- Section Title Start -->
-                    <div class="section-title" data-aos="fade-up" data-aos-delay="300">
+                    <div class="section-title text-center" data-aos="fade-up" data-aos-delay="300">
                         <h2 class="title">What We Work With</h2>
                     </div>
                     <!-- Section Title End -->
@@ -390,44 +294,23 @@
                     font-size: 14px;
                 }
             </style>
+            
+            <!-- View Our Works Button Start -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="600">
+                        <a href="#" class="btn btn-schedule">
+                            View Our Works
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- View Our Works Button End -->
         </div>
     </div>
     <!-- Services Section End -->
 
-    <!-- Funfact Section Start -->
-    <div class="section section-padding-bottom bg-light">
-        <div class="container">
-            <div class="funfact-inner-container">
-                <div class="row mb-n8">
-                    <div class="col-sm-4 col-6 mb-8" data-aos="fade-up" data-aos-delay="300">
-                        <!-- Single Funfact Start -->
-                        <div class="single-funfact">
-                            <span class="odometer" data-count-to="7"></span>
-                            <h6 class="title">Years <br> in Business</h6>
-                        </div>
-                        <!-- Single Funfact End -->
-                    </div>
-                    <div class="col-sm-4 col-6 mb-8" data-aos="fade-up" data-aos-delay="400">
-                        <!-- Single Funfact Start -->
-                        <div class="single-funfact">
-                            <span class="odometer" data-count-to="35"></span>
-                            <h4 class="title">Satisfied <br> Clients</h4>
-                        </div>
-                        <!-- Single Funfact End -->
-                    </div>
-                    <div class="col-sm-4 col-6 mb-8" data-aos="fade-up" data-aos-delay="500">
-                        <!-- Single Funfact Start -->
-                        <div class="single-funfact">
-                            <span class="odometer" data-count-to="43"></span>
-                            <h5 class="title">Homes <br> Renovated</h5>
-                        </div>
-                        <!-- Single Funfact End -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Funfact Section End -->
+
 
 
 
@@ -436,7 +319,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 position-relative">
-                    <div class="section-title client-title" data-aos="fade-up" data-aos-delay="300">
+                    <div class="section-title client-title text-center" data-aos="fade-up" data-aos-delay="300">
                         <h2 class="title">What Our Clients Say</h2>
                     </div>
                     <div class="client-crousel" data-aos="fade-up" data-aos-delay="300">
@@ -568,6 +451,59 @@
         </div>
     </div>
     <!-- Brand Logo End -->
+
+    <!-- Map and Contact Form Section Start -->
+    <div class="section position-relative p-0">
+        <div class="map-form-container">
+            <!-- Google Map Background Start -->
+            <div class="map-background">
+                <iframe 
+                    src="https://www.google.com/maps/d/embed?mid=1EoaHIaT3f1J5Ha-VLTieQrTYfbI&ehbc=2E312F&z=10" 
+                    width="100%" 
+                    height="750" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <!-- Google Map Background End -->
+            
+            <!-- Contact Form Overlay Start -->
+            <div class="form-overlay">
+                <div class="container-fluid">
+                    <div class="row h-100">
+                        <div class="col-lg-8"></div>
+                        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                            <div class="hero-contact-form">
+                                <h3>Get A Free Consult</h3>
+                                <form action="#" method="POST">
+                                    @csrf
+                                    <div class="form-group">
+                                        <input type="text" id="map_name" name="name" class="form-control" placeholder="Full Name *" required>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <input type="tel" id="map_phone" name="phone" class="form-control" placeholder="Phone Number *" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" id="map_email" name="email" class="form-control" placeholder="Email Address">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea id="map_message" name="message" class="form-control" placeholder="Tell us about your project..." rows="4"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn-form-submit">Get My Free Consult</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Form Overlay End -->
+        </div>
+    </div>
+    <!-- Map and Contact Form Section End -->
 
 
 @endsection  

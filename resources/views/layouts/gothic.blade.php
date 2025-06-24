@@ -66,35 +66,25 @@
                                             <a class="@yield('home_active')" href="{{ route('home') }}">Home</a>
                                         </li>
                                         <li>
-                                            <a href="#">Works</a>
-                                            <ul class="submenu">
-                                                <li><a href="#">Project</a></li>
-                                                <li><a href="#">Project Details</a></li>
-                                            </ul>
+                                            <a href="#">Roofing</a>
                                         </li>
                                         <li>
-                                            <a href="#">News</a>
-                                            <ul class="submenu">
-                                                <li><a href="#">Blog</a></li>
-                                                <li><a href="#">Blog Details</a></li>
-                                            </ul>
+                                            <a href="#">Sidings</a>
                                         </li>
                                         <li>
-                                            <a href="#">About</a>
+                                            <a href="#">Decks</a>
                                         </li>
                                         <li>
-                                            <a href="#">Contact</a>
+                                            <a href="#">Projects</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contacts</a>
                                         </li>
                                     </ul>
                                 </nav>
                                 <!-- Main Menu End -->
 
-                                <!-- Language Start -->
-                                <div class="language language-white d-md-none d-lg-flex">
-                                    <a href="#">Eng</a>
-                                    <a href="#"> <span>Fra</span></a>
-                                </div>
-                                <!-- Language End -->
+
 
                             </div>
                             <!-- Main Menu Language Wrapper End -->
@@ -148,25 +138,24 @@
                 <div class="mobile-navigation">
                     <nav>
                         <ul class="mobile-menu">
-                            <li class="has-children">
+                            <li>
                                 <a href="{{ route('home') }}">Home</a>
                             </li>
-                            <li class="has-children">
-                                <a href="#">Works <i class="icofont-rounded-down" aria-hidden="true"></i></a>
-                                <ul class="dropdown">
-                                    <li><a href="#">Project</a></li>
-                                    <li><a href="#">Project Details</a></li>
-                                </ul>
+                            <li>
+                                <a href="#">Roofing</a>
                             </li>
-                            <li class="has-children">
-                                <a href="#">News <i class="icofont-rounded-down" aria-hidden="true"></i></a>
-                                <ul class="dropdown">
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Blog Details</a></li>
-                                </ul>
+                            <li>
+                                <a href="#">Sidings</a>
                             </li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li>
+                                <a href="#">Decks</a>
+                            </li>
+                            <li>
+                                <a href="#">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Contacts</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -182,23 +171,24 @@
     @yield('content')
 
     <!-- Main Footer -->
-    <footer class="section section-padding-top bg-light overflow-hidden">
+    <footer class="section section-padding-top footer-dark overflow-hidden">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
                     <!-- Footer Logo Start -->
                     <div class="footer-logo">
-                        <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo/logo-black.png') }}" alt="Logo Black" /></a>
+                        <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo/logo-white.png') }}" alt="Logo White" /></a>
                     </div>
                     <!-- Footer Logo End -->
 
                     <!-- Footer Nav Start -->
                     <ul class="footer-nav mb-n3">
                         <li class="mb-3"><a href="{{ route('home') }}">Home</a></li>
-                        <li class="mb-3"><a href="#">Works</a></li>
-                        <li class="mb-3"><a href="#">News</a></li>
-                        <li class="mb-3"><a href="#">About</a></li>
-                        <li class="mb-3"><a href="#">Contact</a></li>
+                        <li class="mb-3"><a href="#">Roofing</a></li>
+                        <li class="mb-3"><a href="#">Sidings</a></li>
+                        <li class="mb-3"><a href="#">Decks</a></li>
+                        <li class="mb-3"><a href="#">Projects</a></li>
+                        <li class="mb-3"><a href="#">Contacts</a></li>
                     </ul>
                     <!-- Footer Nav End -->
 
@@ -216,10 +206,6 @@
                         <li><a href="#" class="icofont-dribbble"></a></li>
                     </ul>
                     <!-- Footer Social Icons End -->
-
-                    <!-- Copyright Start -->
-                    <div class="copyright">© 2021 <span>GOTHIC</span> Made with <i class="icofont-heart-alt text-danger" aria-hidden="true"></i> by <a href="https://hasthemes.com/">HasThemes</a></div>
-                    <!-- Copyright End -->
                 </div>
             </div>
         </div>
