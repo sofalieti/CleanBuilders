@@ -34,7 +34,10 @@
                                         </h2>
                                         <p class="hero-description">Looking for reliable professionals you can trust with your home? We deliver exceptional craftsmanship and reliable service you can count on for your most important investment.</p>
                                         <div class="hero-buttons">
-                                            <a href="#" class="btn-custom btn-primary-custom">Get a Free Consult</a>
+                                            <a href="#" class="btn-custom btn-primary-custom d-lg-none">Get a Free Consult</a>
+                                            <a href="#" class="btn-custom btn-video-custom" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                                <i class="icofont-ui-play me-2"></i>Watch Video
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -306,9 +309,162 @@
     </div>
     <!-- Services Section End -->
 
+    <!-- YouTube Shorts Section Start -->
+    <div class="section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title text-center" data-aos="fade-up" data-aos-delay="300">
+                        <h2 class="title">Watch Our Work in Action</h2>
+                        <p class="subtitle text-muted mb-5">See our construction process through these short videos</p>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
 
+            <div class="row mb-n6">
+                <!-- YouTube Short 1 -->
+                <div class="col-lg-3 col-md-6 mb-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="youtube-short-wrapper">
+                        <div class="youtube-short-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/4g0tq1KQF5I?rel=0&modestbranding=1&showinfo=0" 
+                                title="Roofing Installation Process #1"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h5 class="youtube-short-title">Roofing Installation Process #1</h5>
+                    </div>
+                </div>
 
+                <!-- YouTube Short 2 -->
+                <div class="col-lg-3 col-md-6 mb-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="youtube-short-wrapper">
+                        <div class="youtube-short-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/9teapq0fG8s?rel=0&modestbranding=1&showinfo=0" 
+                                title="Siding Installation Techniques #2"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h5 class="youtube-short-title">Siding Installation Techniques #2</h5>
+                    </div>
+                </div>
 
+                <!-- YouTube Short 3 -->
+                <div class="col-lg-3 col-md-6 mb-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="youtube-short-wrapper">
+                        <div class="youtube-short-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/2vSF2mdrkUg?rel=0&modestbranding=1&showinfo=0" 
+                                title="Custom Deck Building Process #3"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h5 class="youtube-short-title">Custom Deck Building Process #3</h5>
+                    </div>
+                </div>
+
+                <!-- YouTube Short 4 -->
+                <div class="col-lg-3 col-md-6 mb-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="youtube-short-wrapper">
+                        <div class="youtube-short-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/bzecSPPetHc?rel=0&modestbranding=1&showinfo=0" 
+                                title="Quality Construction Tips #4"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h5 class="youtube-short-title">Quality Construction Tips #4</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subscribe Button -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="700">
+                        <a href="https://www.youtube.com/@CleanBuilders" target="_blank" class="btn btn-schedule">
+                            <i class="icofont-youtube-play me-2"></i>
+                            Subscribe to Our YouTube Channel
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- YouTube Shorts Section End -->
+
+    <!-- Custom CSS for YouTube Shorts -->
+    <style>
+        .youtube-short-wrapper {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .youtube-short-wrapper:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .youtube-short-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 177.78%; /* 16:9 aspect ratio for vertical shorts (9:16) */
+            height: 0;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .youtube-short-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        
+        .youtube-short-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            line-height: 1.4;
+        }
+        
+        /* Mobile responsive adjustments */
+        @media (max-width: 768px) {
+            .youtube-short-container {
+                padding-bottom: 177.78%; /* Maintain 9:16 aspect ratio on tablets */
+            }
+            
+            .youtube-short-wrapper {
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .youtube-short-container {
+                padding-bottom: 177.78%; /* Maintain 9:16 aspect ratio on mobile */
+            }
+        }
+    </style>
 
     <!-- Client Section Start -->
     <div class="section section-padding-top">
@@ -501,5 +657,145 @@
     </div>
     <!-- Map and Contact Form Section End -->
 
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="video-container">
+                        <iframe id="videoFrame" 
+                                src="" 
+                                title="CleanBuilders Video" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+    <!-- Custom CSS for Video Button and Modal -->
+    <style>
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        
+        .btn-video-custom {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
+        
+        .btn-video-custom:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            text-decoration: none;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-video-custom i {
+            font-size: 18px;
+        }
+        
+        /* Video Modal Styles */
+        .modal-content {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .modal-header {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background: none;
+            padding: 0;
+        }
+        
+        .btn-close {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* Mobile responsive */
+        @media (max-width: 991px) {
+            .hero-buttons {
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+            }
+            
+            .btn-video-custom,
+            .btn-primary-custom {
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+        }
+        
+        /* Desktop adjustments */
+        @media (min-width: 992px) {
+            .hero-buttons {
+                justify-content: flex-start;
+            }
+        }
+    </style>
+
+    <!-- JavaScript for Video Modal -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoModal = document.getElementById('videoModal');
+            const videoFrame = document.getElementById('videoFrame');
+            const videoUrl = 'https://www.youtube.com/embed/0vYohqeviOQ?autoplay=1&rel=0&modestbranding=1';
+            
+            // Load video when modal opens
+            videoModal.addEventListener('show.bs.modal', function() {
+                videoFrame.src = videoUrl;
+            });
+            
+            // Stop video when modal closes
+            videoModal.addEventListener('hide.bs.modal', function() {
+                videoFrame.src = '';
+            });
+        });
+    </script>
 
 @endsection  

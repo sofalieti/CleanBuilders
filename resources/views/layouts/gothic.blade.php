@@ -31,6 +31,30 @@
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}" />
 
     @stack('styles')
+    
+    <!-- Custom responsive styles -->
+    <style>
+        /* Mobile menu button visibility */
+        @media (min-width: 1200px) {
+            .mobile-menu-hamburger {
+                display: none !important;
+            }
+        }
+        
+        /* Main menu visibility */
+        @media (max-width: 1199px) {
+            .main-menu-language-wrapper {
+                display: none !important;
+            }
+        }
+        
+        /* Hero buttons responsive adjustments */
+        @media (min-width: 992px) {
+            .btn-primary-custom.d-lg-none {
+                display: none !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -47,14 +71,14 @@
                             <!-- Header Logo Start -->
                             <div class="header-logo">
                                 <a href="{{ route('home') }}">
-                                    <img class="fit-image" src="{{ asset('assets/images/logo/logo-white.png') }}" alt="Header Logo">
+                                    <img class="fit-image" src="{{ asset('assets/images/CleanBuildersWhite.svg') }}" alt="CleanBuilders Logo" style="height: 50px;">
                                 </a>
                             </div>
                             <!-- Header Logo End -->
 
                         </div>
 
-                        <div class="col-lg-8 col-md-7 d-none d-md-block">
+                        <div class="col-lg-8 col-xl-8 d-none d-xl-block">
 
                             <!-- Main Menu Language Wrapper Start -->
                             <div class="main-menu-language-wrapper">
@@ -94,7 +118,7 @@
                         <div class="col-lg-2 col-md-2 col-6">
 
                             <!-- Mobile Menu Hamburger Start -->
-                            <div class="mobile-menu-hamburger mobile-menu-hamburger-white">
+                            <div class="mobile-menu-hamburger mobile-menu-hamburger-white d-xl-none">
                                 <a href="javascript:void(0)">
                                     <span>Menu</span>
                                     <i class="icon ion-android-menu"></i>
@@ -121,7 +145,7 @@
 
                     <!-- Mobile Menu Logo Start  -->
                     <div class="logo-mobile">
-                        <img src="{{ asset('assets/images/logo/logo-black.png') }}" alt="Logo">
+                        <img src="{{ asset('assets/images/CleanBuildersWhite.svg') }}" alt="CleanBuilders Logo" style="height: 40px; filter: invert(1);">
                     </div>
                     <!-- Mobile Menu Logo End -->
 
@@ -177,7 +201,7 @@
                 <div class="col-12 text-center">
                     <!-- Footer Logo Start -->
                     <div class="footer-logo">
-                        <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo/logo-white.png') }}" alt="Logo White" /></a>
+                        <a href="{{ route('home') }}"><img src="{{ asset('assets/images/CleanBuildersWhite.svg') }}" alt="CleanBuilders Logo" style="height: 60px;" /></a>
                     </div>
                     <!-- Footer Logo End -->
 

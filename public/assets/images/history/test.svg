@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200">
+  <!-- Домик -->
+  <path d="M50,50 L150,50 L100,0 Z" fill="none" stroke="darkblue" stroke-width="5" /> <!-- Крыша -->
+  <rect x="50" y="50" width="100" height="100" fill="none" stroke="darkblue" stroke-width="5" /> <!-- Основание дома -->
+  <rect x="60" y="70" width="10" height="30" fill="darkblue" /> <!-- Лестница: первый ступень -->
+  <rect x="80" y="80" width="10" height="20" fill="darkblue" /> <!-- Лестница: второй ступень -->
+  <rect x="100" y="90" width="10" height="10" fill="darkblue" /> <!-- Лестница: третий ступень -->
+
+  <!-- Текст -->
+  <text x="170" y="80" font-family="Arial" font-size="60" fill="darkblue">Clean</text>
+  <text x="170" y="140" font-family="Arial" font-size="60" fill="green">Builders</text>
+</svg>
