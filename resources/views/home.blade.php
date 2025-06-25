@@ -99,48 +99,44 @@
             <div class="work-process-container">
                 <div class="row">
                     <!-- Step 1 -->
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-12 mb-4">
                         <div class="process-step text-center">
                             <div class="process-icon">
                                 <i class="icofont-calendar"></i>
                             </div>
-                            <div class="process-number">01</div>
                             <h5 class="process-title">Schedule an Appointment</h5>
-                            <p class="process-description">Call 855-355-0515 to book your free consultation at a convenient time.</p>
+                            <p class="process-description">Call <span class="phone-highlight">855-355-0515</span> to book your free consultation at a convenient time.</p>
                         </div>
                     </div>
                     
                     <!-- Step 2 -->
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-12 mb-4">
                         <div class="process-step text-center">
                             <div class="process-icon">
                                 <i class="icofont-calculator-alt-2"></i>
                             </div>
-                            <div class="process-number">02</div>
                             <h5 class="process-title">Receive a Quote</h5>
                             <p class="process-description">Our specialist visits, takes measurements, and provides your detailed quote within 2 days.</p>
                         </div>
                     </div>
                     
                     <!-- Step 3 -->
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-12 mb-4">
                         <div class="process-step text-center">
                             <div class="process-icon">
                                 <i class="icofont-paper"></i>
                             </div>
-                            <div class="process-number">03</div>
                             <h5 class="process-title">Sign a Contract</h5>
                             <p class="process-description">After contract approval, we review details and order your materials.</p>
                         </div>
                     </div>
                     
                     <!-- Step 4 -->
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-12 mb-4">
                         <div class="process-step text-center">
                             <div class="process-icon">
                                 <i class="icofont-hammer"></i>
                             </div>
-                            <div class="process-number">04</div>
                             <h5 class="process-title">Project Completion</h5>
                             <p class="process-description">Certified installers complete the work and ensure your complete satisfaction.</p>
                         </div>

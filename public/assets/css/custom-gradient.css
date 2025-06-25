@@ -380,8 +380,6 @@ select.form-control:focus {
     position: relative;
 }
 
-
-
 .how-we-work-section .container {
     position: relative;
 }
@@ -394,6 +392,11 @@ select.form-control:focus {
 
 /* How We Work Process Steps */
 .work-process-container {
+    position: relative;
+    overflow: visible;
+}
+
+.work-process-container .col-lg-3 {
     position: relative;
 }
 
@@ -431,22 +434,7 @@ select.form-control:focus {
 }
 
 .process-number {
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    width: 60px;
-    height: 60px;
-    background: #f0f0f0;
-    color: #222222;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
-    font-size: 28px;
-    z-index: 3;
-    border: 3px solid white;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: none !important;
 }
 
 .process-title {
@@ -462,31 +450,148 @@ select.form-control:focus {
     margin-bottom: 0;
 }
 
+/* Стрелочки между блоками */
+.work-process-container .col-lg-3:nth-child(1)::after {
+    content: '⤻';
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    font-size: 96px;
+    color: #3a952a;
+    font-weight: 300;
+    z-index: 999;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.work-process-container .col-lg-3:nth-child(2)::after {
+    content: '⤻';
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%) scaleY(-1);
+    font-size: 96px;
+    color: #3a952a;
+    font-weight: 300;
+    z-index: 999;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.work-process-container .col-lg-3:nth-child(3)::after {
+    content: '⤻';
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    font-size: 96px;
+    color: #3a952a;
+    font-weight: 300;
+    z-index: 999;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Убираем старые стили */
+.process-step::after {
+    display: none !important;
+}
+
+/* Адаптация для планшетов */
+@media (max-width: 991px) and (min-width: 768px) {
+    .work-process-container .col-lg-3:nth-child(1)::after {
+        content: '⤻';
+        top: 69%;
+        bottom: auto;
+        right: 50%;
+        left: auto;
+        transform: translateX(50%) rotate(90deg);
+        font-size: 96px;
+        font-weight: 300;
+    }
+    
+    .work-process-container .col-lg-3:nth-child(2)::after {
+        content: '⤻';
+        top: 69%;
+        bottom: auto;
+        right: 50%;
+        left: auto;
+        transform: translateX(50%) rotate(90deg) scaleY(-1);
+        font-size: 96px;
+        font-weight: 300;
+    }
+    
+    .work-process-container .col-lg-3:nth-child(3)::after {
+        content: '⤻';
+        top: 69%;
+        bottom: auto;
+        right: 50%;
+        left: auto;
+        transform: translateX(50%) rotate(90deg);
+        font-size: 96px;
+        font-weight: 300;
+    }
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 767px) {
+    .work-process-container .col-lg-3:nth-child(1)::after {
+        content: '⤻';
+        top: 69%;
+        bottom: auto;
+        right: 50%;
+        left: auto;
+        transform: translateX(50%) rotate(90deg);
+        font-size: 96px;
+        font-weight: 300;
+    }
+    
+    .work-process-container .col-lg-3:nth-child(2)::after {
+        content: '⤻';
+        top: 69%;
+        bottom: auto;
+        right: 50%;
+        left: auto;
+        transform: translateX(50%) rotate(90deg) scaleY(-1);
+        font-size: 96px;
+        font-weight: 300;
+    }
+    
+    .work-process-container .col-lg-3:nth-child(3)::after {
+        content: '⤻';
+        top: 69%;
+        bottom: auto;
+        right: 50%;
+        left: auto;
+        transform: translateX(50%) rotate(90deg);
+        font-size: 96px;
+        font-weight: 300;
+    }
+}
+
 /* Schedule Appointment Button */
 .btn-schedule {
     background: linear-gradient(135deg, #3a952a 0%, #2e7a22 100%);
     color: white;
-    padding: 15px 30px;
-    border-radius: 30px;
+    padding: 25px 50px;
+    border-radius: 50px;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 27px;
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
-    box-shadow: 0 4px 15px rgba(58, 149, 42, 0.3);
+    box-shadow: 0 7px 25px rgba(58, 149, 42, 0.3);
 }
 
 .btn-schedule:hover {
     background: linear-gradient(135deg, #2e7a22 0%, #245c1a 100%);
     color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(58, 149, 42, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 33px rgba(58, 149, 42, 0.4);
     text-decoration: none;
 }
 
 .btn-schedule i {
-    font-size: 18px;
+    font-size: 30px;
 }
 
 /* Мобильная адаптация */
@@ -496,8 +601,13 @@ select.form-control:focus {
     }
     
     .btn-schedule {
-        padding: 12px 25px;
-        font-size: 14px;
+        padding: 20px 42px;
+        font-size: 23px;
+        font-weight: 400;
+    }
+    
+    .btn-schedule i {
+        font-size: 27px;
     }
 }
 
@@ -667,4 +777,70 @@ select.form-control:focus {
     .col-lg-2.col-md-2.col-6 {
         padding-right: 15px;
     }
+}
+
+/* Уменьшение основных отступов между блоками в 2 раза */
+.section-padding {
+    padding-top: 75px !important;
+    padding-bottom: 75px !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section-padding {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-padding {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+}
+
+.section-padding-top {
+    padding-top: 75px !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section-padding-top {
+        padding-top: 40px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-padding-top {
+        padding-top: 30px !important;
+    }
+}
+
+.section-padding-bottom {
+    padding-bottom: 75px !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section-padding-bottom {
+        padding-bottom: 40px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-padding-bottom {
+        padding-bottom: 30px !important;
+    }
+}
+
+/* Phone number highlighting */
+.phone-highlight {
+    color: #3a952a !important;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.phone-highlight:hover {
+    color: #2e7a22 !important;
+    text-decoration: underline;
 } 
