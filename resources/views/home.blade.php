@@ -158,7 +158,268 @@
     </div>
     <!-- How We Work Section End -->
 
+    <!-- Sticky CTA Bar Start -->
+    <div class="sticky-cta-bar" id="stickyCTA">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-7">
+                    <div class="cta-content">
+                        <h4 class="cta-title mb-0">Ready to Transform Your Home?</h4>
+                        <p class="cta-subtitle mb-0">Get your free consultation today - trusted by Bay Area homeowners</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 text-end">
+                    <a href="tel:855-355-0515" class="btn btn-cta-primary me-2">
+                        <i class="icofont-phone me-1"></i>
+                        Call Now
+                    </a>
+                    <a href="#" class="btn btn-cta-secondary">
+                        Free Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sticky CTA Bar End -->
 
+    <!-- Why Choose Us Section Start -->
+    <div class="section section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title text-center" data-aos="fade-up" data-aos-delay="300">
+                        <h2 class="title">Why Choose CleanBuilders?</h2>
+                        <p class="subtitle text-muted mb-5">We are Bay Area's trusted experts in roofing, siding, and deck construction</p>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row mb-n6">
+                <!-- Reason 1 -->
+                <div class="col-lg-4 col-md-6 mb-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-choose-item text-center">
+                        <div class="why-icon mb-4">
+                            <i class="icofont-certificate-alt-1"></i>
+                        </div>
+                        <h4 class="why-title mb-3">Licensed & Insured</h4>
+                        <p class="why-description">Fully licensed contractors with comprehensive insurance coverage. Your project is protected from start to finish.</p>
+                    </div>
+                </div>
+                
+                <!-- Reason 2 -->
+                <div class="col-lg-4 col-md-6 mb-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="why-choose-item text-center">
+                        <div class="why-icon mb-4">
+                            <i class="icofont-star"></i>
+                        </div>
+                        <h4 class="why-title mb-3">Premium Materials</h4>
+                        <p class="why-description">We use only the highest quality materials from trusted brands like GAF and James Hardie for lasting results.</p>
+                    </div>
+                </div>
+                
+                <!-- Reason 3 -->
+                <div class="col-lg-4 col-md-6 mb-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="why-choose-item text-center">
+                        <div class="why-icon mb-4">
+                            <i class="icofont-shield-alt"></i>
+                        </div>
+                        <h4 class="why-title mb-3">10-Year Warranty</h4>
+                        <p class="why-description">All our work comes with a comprehensive 10-year warranty. We stand behind our craftsmanship.</p>
+                    </div>
+                </div>
+                
+                <!-- Reason 4 -->
+                <div class="col-lg-4 col-md-6 mb-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="why-choose-item text-center">
+                        <div class="why-icon mb-4">
+                            <i class="icofont-clock-time"></i>
+                        </div>
+                        <h4 class="why-title mb-3">On-Time Completion</h4>
+                        <p class="why-description">We respect your time and budget. Projects are completed on schedule with transparent communication throughout.</p>
+                    </div>
+                </div>
+                
+                <!-- Reason 5 -->
+                <div class="col-lg-4 col-md-6 mb-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="why-choose-item text-center">
+                        <div class="why-icon mb-4">
+                            <i class="icofont-users-alt-4"></i>
+                        </div>
+                        <h4 class="why-title mb-3">Expert Team</h4>
+                        <p class="why-description">Our certified installers have years of experience and undergo continuous training on the latest techniques.</p>
+                    </div>
+                </div>
+                
+                <!-- Reason 6 -->
+                <div class="col-lg-4 col-md-6 mb-6" data-aos="fade-up" data-aos-delay="800">
+                    <div class="why-choose-item text-center">
+                        <div class="why-icon mb-4">
+                            <i class="icofont-money"></i>
+                        </div>
+                        <h4 class="why-title mb-3">Fair Pricing</h4>
+                        <p class="why-description">Competitive, transparent pricing with no hidden fees. Get the best value for your investment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us Section End -->
+
+    <!-- Red Flag Warning Section Start -->
+    <div class="section section-padding-small bg-warning-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="warning-note-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 text-center mb-3 mb-md-0">
+                                <div class="warning-icon">
+                                    <i class="icofont-warning-alt"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <h4 class="warning-title">⚠️ Red Flags When Hiring Contractors</h4>
+                                <div class="warning-list">
+                                    <span class="warning-item">Door-to-door sales</span>
+                                    <span class="warning-item">No written estimates</span>
+                                    <span class="warning-item">Cash-only payments</span>
+                                    <span class="warning-item">No local address</span>
+                                    <span class="warning-item">Pressure tactics</span>
+                                    <span class="warning-item">No insurance proof</span>
+                                </div>
+                                <p class="warning-note mb-0">
+                                    <strong>Choose CleanBuilders:</strong> Licensed, insured, local Bay Area contractors with transparent pricing and proven track record.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Red Flag Warning Section End -->
+
+    <!-- Before/After Transformations Section Start -->
+    <div class="section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title text-center" data-aos="fade-up" data-aos-delay="300">
+                        <h2 class="title">Amazing Home Transformations</h2>
+                        <p class="subtitle text-muted mb-5">See the incredible difference our expert craftsmanship makes</p>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <!-- Before/After Comparisons Start -->
+            <div class="before-after-grid" data-aos="fade-up" data-aos-delay="400">
+                <div class="row">
+                    
+                    <!-- Comparison 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="before-after-item">
+                            <div class="before-after-container">
+                                <div class="before-after-wrapper">
+                                    <div class="before-image">
+                                        <img src="{{ asset('assets/images/gallery/1-1.jpg') }}" alt="Before Roofing" class="img-fluid">
+                                        <div class="image-label before-label">Before</div>
+                                    </div>
+                                    <div class="after-image">
+                                        <img src="{{ asset('assets/images/gallery/1-2.jpg') }}" alt="After Roofing" class="img-fluid">
+                                        <div class="image-label after-label">After</div>
+                                    </div>
+                                    <div class="slider-handle">
+                                        <div class="slider-button">
+                                            <i class="icofont-curved-double-left"></i>
+                                            <i class="icofont-curved-double-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transformation-info text-center mt-4">
+                                <h4>Complete Roof Replacement</h4>
+                                <p class="text-muted">San Jose, CA - GAF Timberline HD Shingles</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comparison 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="before-after-item">
+                            <div class="before-after-container">
+                                <div class="before-after-wrapper">
+                                    <div class="before-image">
+                                        <img src="{{ asset('assets/images/gallery/2-1.jpg') }}" alt="Before Siding" class="img-fluid">
+                                        <div class="image-label before-label">Before</div>
+                                    </div>
+                                    <div class="after-image">
+                                        <img src="{{ asset('assets/images/gallery/2-2.jpg') }}" alt="After Siding" class="img-fluid">
+                                        <div class="image-label after-label">After</div>
+                                    </div>
+                                    <div class="slider-handle">
+                                        <div class="slider-button">
+                                            <i class="icofont-curved-double-left"></i>
+                                            <i class="icofont-curved-double-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transformation-info text-center mt-4">
+                                <h4>James Hardie Siding Installation</h4>
+                                <p class="text-muted">Fremont, CA - Fiber Cement Siding</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comparison 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="before-after-item">
+                            <div class="before-after-container">
+                                <div class="before-after-wrapper">
+                                    <div class="before-image">
+                                        <img src="{{ asset('assets/images/gallery/3.jpg') }}" alt="Before Deck" class="img-fluid">
+                                        <div class="image-label before-label">Before</div>
+                                    </div>
+                                    <div class="after-image">
+                                        <img src="{{ asset('assets/images/gallery/4.jpg') }}" alt="After Deck" class="img-fluid">
+                                        <div class="image-label after-label">After</div>
+                                    </div>
+                                    <div class="slider-handle">
+                                        <div class="slider-button">
+                                            <i class="icofont-curved-double-left"></i>
+                                            <i class="icofont-curved-double-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transformation-info text-center mt-4">
+                                <h4>Custom Deck Construction</h4>
+                                <p class="text-muted">Palo Alto, CA - Composite Decking</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Before/After Comparisons End -->
+
+            <!-- View All Projects Button -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="600">
+                        <a href="#" class="btn btn-schedule">
+                            View All Transformations
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Before/After Transformations Section End -->
 
     <!-- Services Section Start -->
     <div class="section section-padding bg-light">
@@ -779,7 +1040,7 @@
         }
     </style>
 
-    <!-- JavaScript for Video Modal -->
+    <!-- JavaScript for Video Modal and Sticky CTA -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const videoModal = document.getElementById('videoModal');
@@ -794,6 +1055,131 @@
             // Stop video when modal closes
             videoModal.addEventListener('hide.bs.modal', function() {
                 videoFrame.src = '';
+            });
+
+            // Sticky CTA Bar Logic
+            const stickyCTA = document.getElementById('stickyCTA');
+            const heroSection = document.querySelector('.hero-slider');
+            let hasShown = false;
+
+            function showStickyCTA() {
+                if (!hasShown && stickyCTA) {
+                    stickyCTA.classList.add('show');
+                    document.body.classList.add('sticky-cta-visible');
+                    hasShown = true;
+                }
+            }
+
+            function hideStickyCTA() {
+                if (stickyCTA) {
+                    stickyCTA.classList.remove('show');
+                    document.body.classList.remove('sticky-cta-visible');
+                    hasShown = false;
+                }
+            }
+
+            // Show sticky CTA when user scrolls past hero section
+            window.addEventListener('scroll', function() {
+                if (heroSection) {
+                    const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+                    const scrollPosition = window.pageYOffset;
+                    
+                    if (scrollPosition > heroBottom - 100) {
+                        showStickyCTA();
+                    } else {
+                        hideStickyCTA();
+                    }
+                }
+            });
+
+            // Before/After слайдеры теперь статичные, Swiper не нужен
+
+            // Before/After Image Slider Interaction
+            document.querySelectorAll('.before-after-wrapper').forEach(wrapper => {
+                const afterImage = wrapper.querySelector('.after-image');
+                const sliderHandle = wrapper.querySelector('.slider-handle');
+                let isDragging = false;
+                let startX = 0;
+
+                function updateSlider(e) {
+                    const rect = wrapper.getBoundingClientRect();
+                    const x = (e.clientX || (e.touches && e.touches[0] ? e.touches[0].clientX : startX)) - rect.left;
+                    const percentage = Math.max(0, Math.min(100, (x / rect.width) * 100));
+                    
+                    // Убираем transition во время перетаскивания
+                    afterImage.style.transition = 'none';
+                    afterImage.style.clipPath = `polygon(${percentage}% 0%, 100% 0%, 100% 100%, ${percentage}% 100%)`;
+                    sliderHandle.style.left = `${percentage}%`;
+                    sliderHandle.style.transform = `translate(-50%, -50%)`;
+                }
+
+                function stopDragging() {
+                    isDragging = false;
+                    // Возвращаем transition
+                    afterImage.style.transition = 'clip-path 0.1s ease';
+                    document.body.style.cursor = 'default';
+                    document.body.style.userSelect = 'auto';
+                }
+
+                // Mouse events
+                sliderHandle.addEventListener('mousedown', (e) => {
+                    isDragging = true;
+                    startX = e.clientX;
+                    document.body.style.cursor = 'ew-resize';
+                    document.body.style.userSelect = 'none';
+                    e.preventDefault();
+                    e.stopPropagation();
+                });
+
+                document.addEventListener('mousemove', (e) => {
+                    if (isDragging) {
+                        updateSlider(e);
+                        e.preventDefault();
+                    }
+                });
+
+                document.addEventListener('mouseup', () => {
+                    if (isDragging) {
+                        stopDragging();
+                    }
+                });
+
+                // Touch events
+                sliderHandle.addEventListener('touchstart', (e) => {
+                    isDragging = true;
+                    startX = e.touches[0].clientX;
+                    e.preventDefault();
+                    e.stopPropagation();
+                });
+
+                document.addEventListener('touchmove', (e) => {
+                    if (isDragging) {
+                        updateSlider(e);
+                        e.preventDefault();
+                    }
+                }, { passive: false });
+
+                document.addEventListener('touchend', () => {
+                    if (isDragging) {
+                        stopDragging();
+                    }
+                });
+
+                // Click to position (на всей области, кроме handle)
+                wrapper.addEventListener('click', (e) => {
+                    if (!isDragging && e.target !== sliderHandle && !sliderHandle.contains(e.target)) {
+                        updateSlider(e);
+                        // Возвращаем transition после клика
+                        setTimeout(() => {
+                            afterImage.style.transition = 'clip-path 0.1s ease';
+                        }, 10);
+                    }
+                });
+
+                // Предотвращаем клик на handle
+                sliderHandle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                });
             });
         });
     </script>

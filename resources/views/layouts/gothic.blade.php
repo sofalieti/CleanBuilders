@@ -54,6 +54,46 @@
                 display: none !important;
             }
         }
+        
+        /* Logo responsive adjustments - убираем фиксированную высоту для корректного отображения */
+        .header-logo img {
+            max-width: 180px;
+            height: auto;
+            width: auto;
+            object-fit: contain;
+        }
+        
+        .logo-mobile img {
+            max-width: 150px;
+            height: auto;
+            width: auto;
+            object-fit: contain;
+        }
+        
+        .footer-logo img {
+            max-width: 200px;
+            height: auto;
+            object-fit: contain;
+        }
+        
+        @media (max-width: 768px) {
+            .header-logo img {
+                max-width: 140px;
+                height: auto;
+            }
+            
+            .logo-mobile img {
+                max-width: 120px;
+                height: auto;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .header-logo img {
+                max-width: 120px;
+                height: auto;
+            }
+        }
     </style>
 </head>
 
@@ -71,7 +111,7 @@
                             <!-- Header Logo Start -->
                             <div class="header-logo">
                                 <a href="{{ route('home') }}">
-                                    <img class="fit-image" src="{{ asset('assets/images/CleanBuildersWhite.svg') }}" alt="CleanBuilders Logo" style="height: 50px;">
+                                    <img class="fit-image" src="{{ asset('assets/images/CleanBuildersWhite.svg') }}" alt="CleanBuilders Logo">
                                 </a>
                             </div>
                             <!-- Header Logo End -->
@@ -145,7 +185,7 @@
 
                     <!-- Mobile Menu Logo Start  -->
                     <div class="logo-mobile">
-                        <img src="{{ asset('assets/images/CleanBuildersWhite.svg') }}" alt="CleanBuilders Logo" style="height: 40px; filter: invert(1);">
+                        <img src="{{ asset('assets/images/CleanBuildersDark.svg') }}" alt="CleanBuilders Logo">
                     </div>
                     <!-- Mobile Menu Logo End -->
 
@@ -201,7 +241,7 @@
                 <div class="col-12 text-center">
                     <!-- Footer Logo Start -->
                     <div class="footer-logo">
-                        <a href="{{ route('home') }}"><img src="{{ asset('assets/images/CleanBuildersWhite.svg') }}" alt="CleanBuilders Logo" style="height: 60px;" /></a>
+                        <a href="{{ route('home') }}"><img src="{{ asset('assets/images/CleanBuildersWhite.svg') }}" alt="CleanBuilders Logo" /></a>
                     </div>
                     <!-- Footer Logo End -->
 
