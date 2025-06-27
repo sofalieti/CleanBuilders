@@ -1,4 +1,4 @@
-/* Custom gradient overlay for hero slider */
+/* Dark gradient overlay for hero slider - for better text readability */
 .hero-slide-bg::before {
     content: '';
     position: absolute;
@@ -26,7 +26,6 @@
 
 /* Header z-index to be above all elements */
 .header {
-    position: relative;
     z-index: 9999 !important;
 }
 
