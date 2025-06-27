@@ -18,7 +18,7 @@
 
                         <!-- Hero Slider Bg Image Start -->
                         <div class="hero-slide-bg">
-                            <img src="{{ asset('assets/images/slider/slide-1.jpg') }}" alt="Slider Image" />
+                            <img src="{{ asset('assets/images/slider/CleanBuildersBackground.webp') }}" alt="Slider Image" />
                         </div>
                         <!-- Hero Slider Bg image End -->
 
@@ -102,7 +102,7 @@
             <div class="work-process-container">
                 <div class="row">
                     <!-- Step 1 -->
-                    <div class="col-lg-3 col-md-12 mb-4">
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                         <div class="process-step text-center">
                             <div class="process-icon">
                                 <i class="icofont-calendar"></i>
@@ -113,7 +113,7 @@
                     </div>
                     
                     <!-- Step 2 -->
-                    <div class="col-lg-3 col-md-12 mb-4">
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                         <div class="process-step text-center">
                             <div class="process-icon">
                                 <i class="icofont-calculator-alt-2"></i>
@@ -124,7 +124,7 @@
                     </div>
                     
                     <!-- Step 3 -->
-                    <div class="col-lg-3 col-md-12 mb-4">
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                         <div class="process-step text-center">
                             <div class="process-icon">
                                 <i class="icofont-paper"></i>
@@ -135,7 +135,7 @@
                     </div>
                     
                     <!-- Step 4 -->
-                    <div class="col-lg-3 col-md-12 mb-4">
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                         <div class="process-step text-center">
                             <div class="process-icon">
                                 <i class="icofont-hammer"></i>
@@ -148,7 +148,7 @@
             </div>
             <!-- Work Process Steps End -->
             
-            <div class="text-center mt-5">
+            <div class="text-center btn-section-spacing">
                 <a href="tel:855-355-0515" class="btn btn-schedule">
                     <i class="icofont-phone me-2"></i>
                     Schedule an Appointment
@@ -320,8 +320,8 @@
                 <div class="row">
                     
                     <!-- Comparison 1 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="before-after-item">
+                    <div class="col-lg-4 col-md-12 col-sm-12 mb-4 mb-lg-0 h-100">
+                        <div class="before-after-item h-100">
                             <div class="before-after-container">
                                 <div class="before-after-wrapper">
                                     <div class="before-image">
@@ -348,8 +348,8 @@
                     </div>
 
                     <!-- Comparison 2 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="before-after-item">
+                    <div class="col-lg-4 col-md-12 col-sm-12 mb-4 mb-lg-0 h-100">
+                        <div class="before-after-item h-100">
                             <div class="before-after-container">
                                 <div class="before-after-wrapper">
                                     <div class="before-image">
@@ -376,8 +376,8 @@
                     </div>
 
                     <!-- Comparison 3 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="before-after-item">
+                    <div class="col-lg-4 col-md-12 col-sm-12 mb-4 mb-lg-0 h-100">
+                        <div class="before-after-item h-100">
                             <div class="before-after-container">
                                 <div class="before-after-wrapper">
                                     <div class="before-image">
@@ -410,11 +410,11 @@
             <!-- View All Projects Button -->
             <div class="row">
                 <div class="col-12">
-                    <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="600">
-                        <a href="#" class="btn btn-schedule">
-                            View All Transformations
-                        </a>
-                    </div>
+                                    <div class="text-center btn-section-spacing" data-aos="fade-up" data-aos-delay="600">
+                    <a href="#" class="btn btn-schedule">
+                        View All Transformations
+                    </a>
+                </div>
                 </div>
             </div>
         </div>
@@ -558,11 +558,11 @@
             <!-- View Our Works Button Start -->
             <div class="row">
                 <div class="col-12">
-                    <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="600">
-                        <a href="#" class="btn btn-schedule">
-                            View Our Works
-                        </a>
-                    </div>
+                                    <div class="text-center btn-section-spacing" data-aos="fade-up" data-aos-delay="600">
+                    <a href="#" class="btn btn-schedule">
+                        View Our Works
+                    </a>
+                </div>
                 </div>
             </div>
             <!-- View Our Works Button End -->
@@ -653,12 +653,12 @@
             <!-- Subscribe Button -->
             <div class="row">
                 <div class="col-12">
-                    <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="700">
-                        <a href="https://www.youtube.com/@CleanBuilders" target="_blank" class="btn btn-schedule">
-                            <i class="icofont-youtube-play me-2"></i>
-                            Subscribe to Our YouTube Channel
-                        </a>
-                    </div>
+                                    <div class="text-center btn-section-spacing" data-aos="fade-up" data-aos-delay="700">
+                    <a href="https://www.youtube.com/@CleanBuilders" target="_blank" class="btn btn-schedule">
+                        <i class="icofont-youtube-play me-2"></i>
+                        Subscribe to Our YouTube Channel
+                    </a>
+                </div>
                 </div>
             </div>
         </div>
@@ -1043,6 +1043,24 @@
     <!-- JavaScript for Video Modal and Sticky CTA -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Disable all Swiper animations
+            if (window.Swiper) {
+                // Override Swiper default settings
+                const originalSwiper = window.Swiper;
+                window.Swiper = function(container, options) {
+                    if (options) {
+                        options.speed = 0;
+                        options.autoplay = false;
+                        options.effect = 'slide';
+                        options.parallax = false;
+                        options.loop = false;
+                        options.freeMode = false;
+                        options.cssMode = true;
+                    }
+                    return new originalSwiper(container, options);
+                };
+            }
+
             const videoModal = document.getElementById('videoModal');
             const videoFrame = document.getElementById('videoFrame');
             const videoUrl = 'https://www.youtube.com/embed/0vYohqeviOQ?autoplay=1&rel=0&modestbranding=1';
