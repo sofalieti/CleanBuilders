@@ -104,7 +104,7 @@
         <!-- Header Wrapper Start -->
         <div class="header-wrapper">
             <div class="header-sticky">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row align-items-center">
 
                         <div class="col-lg-2 col-md-3 col-6">
@@ -130,7 +130,7 @@
                                             <a class="@yield('home_active')" href="{{ route('home') }}">Home</a>
                                         </li>
                                         <li>
-                                            <a href="#">Roofing</a>
+                                            <a href="{{ route('roofing') }}">Roofing</a>
                                         </li>
                                         <li>
                                             <a href="#">Sidings</a>
@@ -153,6 +153,22 @@
                             </div>
                             <!-- Main Menu Language Wrapper End -->
 
+                        </div>
+
+                        <div class="col-lg-2 col-xl-2 d-none d-xl-block">
+                            <!-- Header Phone Section Start -->
+                            <div class="header-phone-section">
+                                <div class="header-phone-content">
+                                    <div class="phone-icon">
+                                        <i class="icofont-phone"></i>
+                                    </div>
+                                    <div class="phone-info">
+                                        <span class="phone-label">Call Us Now</span>
+                                        <a href="tel:855-355-0515" class="phone-number">855-355-0515</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Header Phone Section End -->
                         </div>
 
                         <div class="col-lg-2 col-md-2 col-6">
@@ -206,7 +222,7 @@
                                 <a href="{{ route('home') }}">Home</a>
                             </li>
                             <li>
-                                <a href="#">Roofing</a>
+                                <a href="{{ route('roofing') }}">Roofing</a>
                             </li>
                             <li>
                                 <a href="#">Sidings</a>
@@ -248,7 +264,7 @@
                     <!-- Footer Nav Start -->
                     <ul class="footer-nav mb-n3">
                         <li class="mb-3"><a href="{{ route('home') }}">Home</a></li>
-                        <li class="mb-3"><a href="#">Roofing</a></li>
+                        <li class="mb-3"><a href="{{ route('roofing') }}">Roofing</a></li>
                         <li class="mb-3"><a href="#">Sidings</a></li>
                         <li class="mb-3"><a href="#">Decks</a></li>
                         <li class="mb-3"><a href="#">Projects</a></li>

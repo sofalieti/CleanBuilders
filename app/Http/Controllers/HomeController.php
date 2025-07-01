@@ -24,4 +24,13 @@ class HomeController extends Controller
             'menuItems' => $menuItems
         ]);
     }
+
+    public function roofing(Request $request)
+    {
+        $menuItems = $this->menuService->getMenuItems();
+
+        return view('roofing', [
+            'menuItems' => $menuItems
+        ]);
+    }
 } 

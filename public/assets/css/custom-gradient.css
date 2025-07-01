@@ -2325,3 +2325,137 @@ a:active {
         gap: 5px;
     }
 }
+
+/* Уменьшенные иконки и отступы для секции How We Work */
+.process-icon {
+    width: 65px !important;
+    height: 65px !important;
+    margin: 0 auto 15px !important;
+}
+
+.process-icon i {
+    font-size: 26px !important;
+}
+
+.process-title {
+    margin-bottom: 10px !important;
+    font-size: 16px !important;
+}
+
+.process-description {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+}
+
+.process-step {
+    padding: 20px 15px !important;
+}
+
+/* Адаптивные изменения для мобильных устройств */
+@media (max-width: 991px) {
+    .process-icon {
+        width: 60px !important;
+        height: 60px !important;
+        margin: 0 auto 12px !important;
+    }
+    
+    .process-icon i {
+        font-size: 24px !important;
+    }
+    
+    .process-title {
+        font-size: 15px !important;
+        margin-bottom: 8px !important;
+    }
+    
+    .process-description {
+        font-size: 12px !important;
+    }
+    
+    .process-step {
+        padding: 15px 10px !important;
+    }
+}
+
+/* Header Phone Section Styles */
+.header-phone-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding-right: 15px;
+}
+
+.header-phone-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.phone-icon {
+    background: linear-gradient(135deg, #3a952a 0%, #2e7a22 100%);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.phone-icon i {
+    font-size: 18px;
+}
+
+.phone-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.phone-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.phone-number {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+.phone-number:hover {
+    color: #3a952a;
+    text-decoration: none;
+}
+
+/* Responsive adjustments for header phone */
+@media (max-width: 1199px) {
+    .header-phone-section {
+        display: none;
+    }
+}
+
+/* Дополнительные стили для гарантированно белого цвета телефона */
+.header-phone-section .phone-label,
+.header-phone-content .phone-label {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.header-phone-section .phone-number,
+.header-phone-content .phone-number {
+    color: #ffffff !important;
+}
+
+.header-phone-section .phone-number:hover,
+.header-phone-content .phone-number:hover {
+    color: #3a952a !important;
+    text-decoration: none !important;
+}
