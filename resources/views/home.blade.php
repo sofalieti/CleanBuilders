@@ -93,7 +93,9 @@
                 <div class="col-12">
                     <div class="text-center mb-5">
                         <h1 class="title">How We Work</h1>
-                        <p class="subtitle text-muted" style="font-size: 16px; line-height: 1.5;">Simple and transparent process from consultation to project completion.</p>
+                        <p class="subtitle text-muted" style="font-size: 16px; line-height: 1.5;">Simple and transparent process from consultation to project completion.<br>
+                        We believe in clear communication and honest pricing throughout every step of your home transformation.<br>
+                        Our experienced team handles all permits, inspections, and coordination so you can focus on enjoying the results.<br><br></p>
                     </div>
                 </div>
             </div>
@@ -160,6 +162,9 @@
 
     <!-- Sticky CTA Bar Start -->
     <div class="sticky-cta-bar" id="stickyCTA">
+        <button class="sticky-cta-close" id="stickyCTAClose" aria-label="Закрыть">
+            <i class="icofont-close"></i>
+        </button>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8 col-md-7">
@@ -182,116 +187,101 @@
     </div>
     <!-- Sticky CTA Bar End -->
 
-    <!-- Why Choose Us Section Start -->
-    <div class="section section-padding bg-light">
+    <!-- Why CleanBuilders Section Start -->
+    <div class="section section-padding why-cleanbuilders-section">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title text-center" data-aos="fade-up" data-aos-delay="300">
-                        <h2 class="title">Why Choose CleanBuilders?</h2>
-                        <p class="subtitle text-muted mb-5">We are Bay Area's trusted experts in roofing, siding, and deck construction</p>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-
-            <div class="row mb-n6">
-                <!-- Reason 1 -->
-                <div class="col-lg-4 col-md-6 mb-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="why-choose-item text-center">
-                        <div class="why-icon mb-4">
-                            <i class="icofont-certificate-alt-1"></i>
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300">
+                    <div class="why-cleanbuilders-content">
+                        <h2 class="why-title">Why CleanBuilders?</h2>
+                        <h3 class="why-subtitle">Bay Area's Design Leader & Most Experienced Installers</h3>
+                        <p class="why-description">
+                            At CleanBuilders, we have become the local market leader among all Bay Area construction companies by combining exceptional design services, with the world's best roofing, siding, and deck materials and expert, certified installation. You will get an amazing home transformation and the peace of mind that comes with one of the industry's best warranties.
+                        </p>
+                        <div class="why-cta">
+                            <a href="tel:855-355-0515" class="btn btn-schedule">
+                                Free Consultation
+                            </a>
                         </div>
-                        <h4 class="why-title mb-3">Licensed & Insured</h4>
-                        <p class="why-description">Fully licensed contractors with comprehensive insurance coverage. Your project is protected from start to finish.</p>
                     </div>
                 </div>
                 
-                <!-- Reason 2 -->
-                <div class="col-lg-4 col-md-6 mb-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="why-choose-item text-center">
-                        <div class="why-icon mb-4">
-                            <i class="icofont-star"></i>
+                <!-- Images Content -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+                    <div class="why-cleanbuilders-images">
+                        <div class="images-grid">
+                            <div class="image-item">
+                                <img src="{{ asset('assets/images/photos/WhatsApp Image 2025-06-17 at 19.27.39_69a274e1.jpg') }}" alt="CleanBuilders Roofing Work" class="img-fluid rounded">
+                            </div>
+                            <div class="image-item">
+                                <img src="{{ asset('assets/images/photos/WhatsApp Image 2025-06-17 at 19.27.39_94205105.jpg') }}" alt="CleanBuilders Siding Work" class="img-fluid rounded">
+                            </div>
+                            <div class="image-item">
+                                <img src="{{ asset('assets/images/photos/IMG-20250620-WA0002.jpg') }}" alt="CleanBuilders Deck Work" class="img-fluid rounded">
+                            </div>
+                            <div class="image-item">
+                                <img src="{{ asset('assets/images/photos/IMG-20250620-WA0059.jpg') }}" alt="CleanBuilders Quality Work" class="img-fluid rounded">
+                            </div>
                         </div>
-                        <h4 class="why-title mb-3">Premium Materials</h4>
-                        <p class="why-description">We use only the highest quality materials from trusted brands like GAF and James Hardie for lasting results.</p>
-                    </div>
-                </div>
-                
-                <!-- Reason 3 -->
-                <div class="col-lg-4 col-md-6 mb-6" data-aos="fade-up" data-aos-delay="500">
-                    <div class="why-choose-item text-center">
-                        <div class="why-icon mb-4">
-                            <i class="icofont-shield-alt"></i>
-                        </div>
-                        <h4 class="why-title mb-3">10-Year Warranty</h4>
-                        <p class="why-description">All our work comes with a comprehensive 10-year warranty. We stand behind our craftsmanship.</p>
-                    </div>
-                </div>
-                
-                <!-- Reason 4 -->
-                <div class="col-lg-4 col-md-6 mb-6" data-aos="fade-up" data-aos-delay="600">
-                    <div class="why-choose-item text-center">
-                        <div class="why-icon mb-4">
-                            <i class="icofont-clock-time"></i>
-                        </div>
-                        <h4 class="why-title mb-3">On-Time Completion</h4>
-                        <p class="why-description">We respect your time and budget. Projects are completed on schedule with transparent communication throughout.</p>
-                    </div>
-                </div>
-                
-                <!-- Reason 5 -->
-                <div class="col-lg-4 col-md-6 mb-6" data-aos="fade-up" data-aos-delay="700">
-                    <div class="why-choose-item text-center">
-                        <div class="why-icon mb-4">
-                            <i class="icofont-users-alt-4"></i>
-                        </div>
-                        <h4 class="why-title mb-3">Expert Team</h4>
-                        <p class="why-description">Our certified installers have years of experience and undergo continuous training on the latest techniques.</p>
-                    </div>
-                </div>
-                
-                <!-- Reason 6 -->
-                <div class="col-lg-4 col-md-6 mb-6" data-aos="fade-up" data-aos-delay="800">
-                    <div class="why-choose-item text-center">
-                        <div class="why-icon mb-4">
-                            <i class="icofont-money"></i>
-                        </div>
-                        <h4 class="why-title mb-3">Fair Pricing</h4>
-                        <p class="why-description">Competitive, transparent pricing with no hidden fees. Get the best value for your investment.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Why Choose Us Section End -->
+    <!-- Why CleanBuilders Section End -->
 
     <!-- Red Flag Warning Section Start -->
-    <div class="section section-padding-small bg-warning-light">
+    <div class="section section-padding red-flags-section">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="warning-note-card">
-                        <div class="row align-items-center">
-                            <div class="col-md-2 text-center mb-3 mb-md-0">
-                                <div class="warning-icon">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="red-flags-intro-content">
+                        <h2 class="intro-title">Why Expert Installation Matters</h2>
+                        <p class="intro-description">
+                            As a homeowner in the Bay Area, you know that our homes face unique challenges from earthquakes, coastal weather, and temperature fluctuations. When it comes to quality, durability and protection, premium roofing and siding materials are essential for most San Francisco, San Jose and Oakland homeowners.
+                        </p>
+                        <p class="intro-description">
+                            But you will never get the full value of your roofing or siding project without expert installation. This is why CleanBuilders is your best choice for professional home exterior services.
+                        </p>
+                        <div class="intro-logo">
+                            <img src="{{ asset('assets/images/CleanBuildersDark.svg') }}" alt="CleanBuilders Logo" class="intro-logo-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="red-flags-content-card">
+                        <div class="red-flags-content">
+                            <div class="red-flags-header">
+                                <div class="warning-icon-large">
                                     <i class="icofont-warning-alt"></i>
                                 </div>
-                            </div>
-                            <div class="col-md-10">
-                                <h4 class="warning-title">⚠️ Red Flags When Hiring Contractors</h4>
-                                <div class="warning-list">
-                                    <span class="warning-item">Door-to-door sales</span>
-                                    <span class="warning-item">No written estimates</span>
-                                    <span class="warning-item">Cash-only payments</span>
-                                    <span class="warning-item">No local address</span>
-                                    <span class="warning-item">Pressure tactics</span>
-                                    <span class="warning-item">No insurance proof</span>
+                                <div class="red-flags-titles">
+                                    <h3 class="red-flags-subtitle">Don't Hire the Wrong Installer</h3>
+                                    <h2 class="red-flags-title">Red Flags to Look Out for:</h2>
                                 </div>
-                                <p class="warning-note mb-0">
-                                    <strong>Choose CleanBuilders:</strong> Licensed, insured, local Bay Area contractors with transparent pricing and proven track record.
-                                </p>
+                            </div>
+                            <div class="red-flags-list">
+                                <ul class="list-unstyled">
+                                    <li><i class="icofont-ui-close"></i> Door-to-door sales</li>
+                                    <li><i class="icofont-ui-close"></i> No written estimates</li>
+                                    <li><i class="icofont-ui-close"></i> Cash-only payments</li>
+                                    <li><i class="icofont-ui-close"></i> No local address</li>
+                                    <li><i class="icofont-ui-close"></i> Pressure tactics</li>
+                                    <li><i class="icofont-ui-close"></i> No insurance proof</li>
+                                    <li><i class="icofont-ui-close"></i> Limited experience</li>
+                                    <li><i class="icofont-ui-close"></i> Improper installation</li>
+                                    <li><i class="icofont-ui-close"></i> Product failure</li>
+                                    <li><i class="icofont-ui-close"></i> Voided warranty</li>
+                                </ul>
+                            </div>
+                            <p class="red-flags-description">
+                                Choose CleanBuilders: Licensed, insured, local Bay Area contractors with transparent pricing and proven track record.
+                            </p>
+                            <div class="red-flags-cta">
+                                <a href="tel:855-355-0515" class="btn btn-schedule">
+                                    Free Consultation
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -325,11 +315,11 @@
                             <div class="before-after-container">
                                 <div class="before-after-wrapper">
                                     <div class="before-image">
-                                        <img src="{{ asset('assets/images/gallery/1-1.jpg') }}" alt="Before Roofing" class="img-fluid">
+                                        <img src="{{ asset('assets/images/photos/IMG-20250620-WA0001.jpg') }}" alt="Before Roofing" class="img-fluid">
                                         <div class="image-label before-label">Before</div>
                                     </div>
                                     <div class="after-image">
-                                        <img src="{{ asset('assets/images/gallery/1-2.jpg') }}" alt="After Roofing" class="img-fluid">
+                                        <img src="{{ asset('assets/images/photos/IMG-20250701-WA0045.jpg') }}" alt="After Roofing" class="img-fluid">
                                         <div class="image-label after-label">After</div>
                                     </div>
                                     <div class="slider-handle">
@@ -353,11 +343,11 @@
                             <div class="before-after-container">
                                 <div class="before-after-wrapper">
                                     <div class="before-image">
-                                        <img src="{{ asset('assets/images/gallery/2-1.jpg') }}" alt="Before Siding" class="img-fluid">
+                                        <img src="{{ asset('assets/images/photos/IMG-20250701-WA0018.jpg') }}" alt="Before Siding" class="img-fluid">
                                         <div class="image-label before-label">Before</div>
                                     </div>
                                     <div class="after-image">
-                                        <img src="{{ asset('assets/images/gallery/2-2.jpg') }}" alt="After Siding" class="img-fluid">
+                                        <img src="{{ asset('assets/images/photos/IMG-20250701-WA0027.jpg') }}" alt="After Siding" class="img-fluid">
                                         <div class="image-label after-label">After</div>
                                     </div>
                                     <div class="slider-handle">
@@ -381,11 +371,11 @@
                             <div class="before-after-container">
                                 <div class="before-after-wrapper">
                                     <div class="before-image">
-                                        <img src="{{ asset('assets/images/gallery/3.jpg') }}" alt="Before Deck" class="img-fluid">
+                                        <img src="{{ asset('assets/images/photos/IMG-20250620-WA0038.jpg') }}" alt="Before Deck" class="img-fluid">
                                         <div class="image-label before-label">Before</div>
                                     </div>
                                     <div class="after-image">
-                                        <img src="{{ asset('assets/images/gallery/4.jpg') }}" alt="After Deck" class="img-fluid">
+                                        <img src="{{ asset('assets/images/photos/IMG-20250620-WA0061.jpg') }}" alt="After Deck" class="img-fluid">
                                         <div class="image-label after-label">After</div>
                                     </div>
                                     <div class="slider-handle">
@@ -440,7 +430,7 @@
                     <a href="#" class="service-item text-center d-block text-decoration-none text-dark position-relative service-link">
                         <!-- Service Image Start -->
                         <div class="service-image mb-4">
-                            <img src="{{ asset('assets/images/gallery/1-1.jpg') }}" alt="Roofing Services" class="img-fluid rounded" style="height: 250px; width: 100%; object-fit: cover;">
+                            <img src="{{ asset('assets/images/photos/IMG-20250701-WA0045.jpg') }}" alt="Roofing Services" class="img-fluid rounded" style="height: 250px; width: 100%; object-fit: cover;">
                         </div>
                         <!-- Service Image End -->
                         
@@ -466,7 +456,7 @@
                     <a href="#" class="service-item text-center d-block text-decoration-none text-dark position-relative service-link">
                         <!-- Service Image Start -->
                         <div class="service-image mb-4">
-                            <img src="{{ asset('assets/images/gallery/1-2.jpg') }}" alt="Siding Services" class="img-fluid rounded" style="height: 250px; width: 100%; object-fit: cover;">
+                            <img src="{{ asset('assets/images/photos/IMG-20250701-WA0027.jpg') }}" alt="Siding Services" class="img-fluid rounded" style="height: 250px; width: 100%; object-fit: cover;">
                                 </div>
                         <!-- Service Image End -->
                         
@@ -492,7 +482,7 @@
                     <a href="#" class="service-item text-center d-block text-decoration-none text-dark position-relative service-link">
                         <!-- Service Image Start -->
                         <div class="service-image mb-4">
-                            <img src="{{ asset('assets/images/gallery/1-3.jpg') }}" alt="Deck Services" class="img-fluid rounded" style="height: 250px; width: 100%; object-fit: cover;">
+                            <img src="{{ asset('assets/images/photos/IMG-20250620-WA0061.jpg') }}" alt="Deck Services" class="img-fluid rounded" style="height: 250px; width: 100%; object-fit: cover;">
                                 </div>
                         <!-- Service Image End -->
                         
@@ -1077,14 +1067,16 @@
 
             // Sticky CTA Bar Logic
             const stickyCTA = document.getElementById('stickyCTA');
+            const stickyCTAClose = document.getElementById('stickyCTAClose');
             const heroSection = document.querySelector('.hero-slider');
-            let hasShown = false;
+            
+            // Track if CTA was closed in current session
+            let isCTAClosed = false;
 
             function showStickyCTA() {
-                if (!hasShown && stickyCTA) {
+                if (stickyCTA && !isCTAClosed) {
                     stickyCTA.classList.add('show');
                     document.body.classList.add('sticky-cta-visible');
-                    hasShown = true;
                 }
             }
 
@@ -1092,13 +1084,22 @@
                 if (stickyCTA) {
                     stickyCTA.classList.remove('show');
                     document.body.classList.remove('sticky-cta-visible');
-                    hasShown = false;
                 }
             }
 
-            // Show sticky CTA when user scrolls past hero section
+            function closeStickyCtaForSession() {
+                isCTAClosed = true;
+                hideStickyCTA();
+            }
+
+            // Close sticky CTA when close button is clicked
+            if (stickyCTAClose) {
+                stickyCTAClose.addEventListener('click', closeStickyCtaForSession);
+            }
+
+            // Show sticky CTA when user scrolls past hero section (only if not closed in current session)
             window.addEventListener('scroll', function() {
-                if (heroSection) {
+                if (heroSection && !isCTAClosed) {
                     const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
                     const scrollPosition = window.pageYOffset;
                     
