@@ -22,7 +22,8 @@
                             title="Professional Roofing Installation #1"
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
+                            allowfullscreen
+                            loading="lazy">
                         </iframe>
                     </div>
                     <h5 class="youtube-short-title">Professional Roofing Installation #1</h5>
@@ -38,7 +39,8 @@
                             title="Siding Installation Techniques #2"
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
+                            allowfullscreen
+                            loading="lazy">
                         </iframe>
                     </div>
                     <h5 class="youtube-short-title">Siding Installation Techniques #2</h5>
@@ -54,7 +56,8 @@
                             title="Custom Deck Building Process #3"
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
+                            allowfullscreen
+                            loading="lazy">
                         </iframe>
                     </div>
                     <h5 class="youtube-short-title">Custom Deck Building Process #3</h5>
@@ -70,7 +73,8 @@
                             title="Quality Construction Tips #4"
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
+                            allowfullscreen
+                            loading="lazy">
                         </iframe>
                     </div>
                     <h5 class="youtube-short-title">Quality Construction Tips #4</h5>

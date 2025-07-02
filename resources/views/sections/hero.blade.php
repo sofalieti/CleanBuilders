@@ -17,8 +17,8 @@
 
                     <!-- Hero Slider Content Start -->
                     <div class="container">
-                        <div class="hero-content-wrapper">
-                            <div class="hero-text-content">
+                        <div class="hero-content-wrapper row">
+                            <div class="hero-text-content col-lg-7">
                                 <div class="hero-slide-content">
                                     <h4 class="subtitle">Bay Area Professionals</h4>
                                     <h2 class="title">
@@ -34,7 +34,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="hero-form-content d-none d-lg-block">
+                            <div class="hero-form-content d-none d-lg-block col-lg-5">
                                 <div class="hero-contact-form">
                                     <h3>Get A Free Consult</h3>
                                     <form action="#" method="POST">
@@ -74,7 +74,11 @@
     </div>
     <!-- Hero Slider End -->
 
-
+    <div class="scroll-down-arrow-wrapper" style="position: absolute; left: 0; right: 0; bottom: 30px; z-index: 10; text-align: center;">
+        <a href="#how-we-work" class="scroll-down-arrow" style="display: inline-block; color: #fff; font-size: 38px; opacity: 0.85; transition: opacity 0.2s;">
+            <i class="icofont-simple-down"></i>
+        </a>
+    </div>
 
 </div>
 <!-- Hero Section End --> 

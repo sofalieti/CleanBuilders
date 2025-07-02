@@ -97,7 +97,7 @@
     </style>
 </head>
 
-<body>
+<body class="@stack('body_class')">
     <!-- Header Section Start -->
     <div class="header header-transparent-bg section-fluid">
 
@@ -118,7 +118,7 @@
 
                         </div>
 
-                        <div class="col-lg-8 col-xl-8 d-none d-xl-block">
+                        <div class="col-lg-7 col-xl-7 d-none d-xl-block">
 
                             <!-- Main Menu Language Wrapper Start -->
                             <div class="main-menu-language-wrapper">
@@ -130,7 +130,7 @@
                                             <a class="@yield('home_active')" href="{{ route('home') }}">Home</a>
                                         </li>
                                         <li>
-                                            <a href="{{ route('roofing') }}">Roofing</a>
+                                            <a class="@yield('roofing_active')" href="{{ route('roofing') }}">Roofing</a>
                                         </li>
                                         <li>
                                             <a href="#">Sidings</a>
@@ -155,7 +155,7 @@
 
                         </div>
 
-                        <div class="col-lg-2 col-xl-2 d-none d-xl-block">
+                        <div class="col-lg-3 col-xl-3 d-none d-xl-block">
                             <!-- Header Phone Section Start -->
                             <div class="header-phone-section">
                                 <div class="header-phone-content">
@@ -219,10 +219,10 @@
                     <nav>
                         <ul class="mobile-menu">
                             <li>
-                                <a href="{{ route('home') }}">Home</a>
+                                <a class="@yield('home_active')" href="{{ route('home') }}">Home</a>
                             </li>
                             <li>
-                                <a href="{{ route('roofing') }}">Roofing</a>
+                                <a class="@yield('roofing_active')" href="{{ route('roofing') }}">Roofing</a>
                             </li>
                             <li>
                                 <a href="#">Sidings</a>
