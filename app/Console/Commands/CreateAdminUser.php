@@ -33,7 +33,34 @@ class CreateAdminUser extends Command
                 $role = \Orchid\Platform\Models\Role::create([
                     'slug' => 'admin',
                     'name' => 'Administrator',
+                    'permissions' => [
+                        'platform.index' => 1,
+                        'platform.systems.roles' => 1,
+                        'platform.systems.users' => 1,
+                        'platform.systems.attachment' => 1,
+                        'platform.systems.cache' => 1,
+                        'platform.systems.settings' => 1,
+                        'platform.main' => 1,
+                        'platform.gallery' => 1,
+                        'platform.domains' => 1,
+                        'platform.menu' => 1,
+                    ]
                 ]);
+            } else {
+                // Если роль уже существует, обновляем её права
+                $role->permissions = [
+                    'platform.index' => 1,
+                    'platform.systems.roles' => 1,
+                    'platform.systems.users' => 1,
+                    'platform.systems.attachment' => 1,
+                    'platform.systems.cache' => 1,
+                    'platform.systems.settings' => 1,
+                    'platform.main' => 1,
+                    'platform.gallery' => 1,
+                    'platform.domains' => 1,
+                    'platform.menu' => 1,
+                ];
+                $role->save();
             }
             $user->addRole($role);
         }
