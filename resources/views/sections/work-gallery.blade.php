@@ -57,7 +57,7 @@
                             <div class="gallery-tile-content">
                                 <i class="icofont-eye"></i>
                                 <h5>{{ $imageData['project_name'] }}</h5>
-                            </div>
+                            </div>еее
                         </div>
                     </div>
                 @endforeach
