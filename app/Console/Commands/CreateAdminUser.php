@@ -1,4 +1,4 @@
-df<?php
+<?php
 
 namespace App\Console\Commands;
 

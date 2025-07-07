@@ -14,12 +14,12 @@ return new class extends Migration
     {
         // Переносим существующие данные в новую таблицу связей
         if (Schema::hasColumn('gallery_projects', 'gallery_category_id')) {
-            DB::statement("
-                INSERT INTO gallery_project_categories (gallery_project_id, gallery_category_id, created_at, updated_at)
-                SELECT id, gallery_category_id, created_at, updated_at
-                FROM gallery_projects
-                WHERE gallery_category_id IS NOT NULL
-            ");
+        DB::statement("
+            INSERT INTO gallery_project_categories (gallery_project_id, gallery_category_id, created_at, updated_at)
+            SELECT id, gallery_category_id, created_at, updated_at
+            FROM gallery_projects
+            WHERE gallery_category_id IS NOT NULL
+        ");
         }
         
         // Проверяем и удаляем внешний ключ только если он существует
@@ -34,11 +34,11 @@ return new class extends Migration
         
         Schema::table('gallery_projects', function (Blueprint $table) use ($foreignKeys) {
             if (!empty($foreignKeys)) {
-                $table->dropForeign(['gallery_category_id']);
+            $table->dropForeign(['gallery_category_id']);
             }
             
             if (Schema::hasColumn('gallery_projects', 'gallery_category_id')) {
-                $table->dropColumn('gallery_category_id');
+            $table->dropColumn('gallery_category_id');
             }
         });
     }
@@ -50,22 +50,22 @@ return new class extends Migration
     {
         // Возвращаем колонку внешнего ключа только если её нет
         if (!Schema::hasColumn('gallery_projects', 'gallery_category_id')) {
-            Schema::table('gallery_projects', function (Blueprint $table) {
-                $table->foreignId('gallery_category_id')->nullable()->constrained('gallery_categories')->onDelete('cascade');
-            });
+        Schema::table('gallery_projects', function (Blueprint $table) {
+            $table->foreignId('gallery_category_id')->nullable()->constrained('gallery_categories')->onDelete('cascade');
+        });
         }
         
         // Переносим данные обратно (берем первую категорию для каждого проекта)
         if (Schema::hasTable('gallery_project_categories')) {
-            DB::statement("
-                UPDATE gallery_projects 
-                SET gallery_category_id = (
-                    SELECT gallery_category_id 
-                    FROM gallery_project_categories 
-                    WHERE gallery_project_categories.gallery_project_id = gallery_projects.id 
-                    LIMIT 1
-                )
-            ");
+        DB::statement("
+            UPDATE gallery_projects 
+            SET gallery_category_id = (
+                SELECT gallery_category_id 
+                FROM gallery_project_categories 
+                WHERE gallery_project_categories.gallery_project_id = gallery_projects.id 
+                LIMIT 1
+            )
+        ");
         }
         
         // Удаляем новую таблицу связей
