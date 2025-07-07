@@ -35,7 +35,7 @@ class CreateAdminUser extends Command
                     'name' => 'Administrator',
                 ]);
             }
-            $user->addRole($role->slug);
+            $user->addRole($role);
         }
 
         $this->info('Администратор успешно создан! Email: ' . $email . ' Пароль: ' . $password);
