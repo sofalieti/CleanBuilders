@@ -20,6 +20,10 @@ use App\Orchid\Screens\User\UserProfileScreen;
 use App\Orchid\Screens\DomainListScreen;
 use App\Orchid\Screens\DomainEditScreen;
 use App\Orchid\Screens\MenuItemScreen;
+use App\Orchid\Screens\GalleryCategoryListScreen;
+use App\Orchid\Screens\GalleryCategoryEditScreen;
+use App\Orchid\Screens\GalleryProjectListScreen;
+use App\Orchid\Screens\GalleryProjectEditScreen;
 use Illuminate\Support\Facades\Route;
 use Tabuna\Breadcrumbs\Trail;
 
@@ -126,3 +130,41 @@ Route::screen('domains/{domain}/edit', DomainEditScreen::class)
 // Platform > Menu
 Route::screen('menu', MenuItemScreen::class)
     ->name('platform.menu');
+
+// Platform > Gallery > Categories
+Route::screen('gallery/categories', GalleryCategoryListScreen::class)
+    ->name('platform.gallery.categories')
+    ->breadcrumbs(fn (Trail $trail) => $trail
+        ->parent('platform.index')
+        ->push('Категории галереи', route('platform.gallery.categories')));
+
+Route::screen('gallery/categories/create', GalleryCategoryEditScreen::class)
+    ->name('platform.gallery.categories.create')
+    ->breadcrumbs(fn (Trail $trail) => $trail
+        ->parent('platform.gallery.categories')
+        ->push('Создание категории', route('platform.gallery.categories.create')));
+
+Route::screen('gallery/categories/{category}/edit', GalleryCategoryEditScreen::class)
+    ->name('platform.gallery.categories.edit')
+    ->breadcrumbs(fn (Trail $trail, $category) => $trail
+        ->parent('platform.gallery.categories')
+        ->push('Редактирование категории', route('platform.gallery.categories.edit', $category)));
+
+// Platform > Gallery > Projects
+Route::screen('gallery/projects', GalleryProjectListScreen::class)
+    ->name('platform.gallery.projects')
+    ->breadcrumbs(fn (Trail $trail) => $trail
+        ->parent('platform.index')
+        ->push('Проекты галереи', route('platform.gallery.projects')));
+
+Route::screen('gallery/projects/create', GalleryProjectEditScreen::class)
+    ->name('platform.gallery.projects.create')
+    ->breadcrumbs(fn (Trail $trail) => $trail
+        ->parent('platform.gallery.projects')
+        ->push('Создание проекта', route('platform.gallery.projects.create')));
+
+Route::screen('gallery/projects/{project}/edit', GalleryProjectEditScreen::class)
+    ->name('platform.gallery.projects.edit')
+    ->breadcrumbs(fn (Trail $trail, $project) => $trail
+        ->parent('platform.gallery.projects')
+        ->push('Редактирование проекта', route('platform.gallery.projects.edit', $project)));

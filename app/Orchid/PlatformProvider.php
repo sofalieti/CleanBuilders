@@ -53,6 +53,18 @@ class PlatformProvider extends OrchidServiceProvider
                         ->icon('bs.list')
                         ->route('platform.menu')
                         ->title('Menu Management'),
+                        
+                    Menu::make('Gallery')
+                        ->icon('bs.images')
+                        ->title('Gallery Management')
+                        ->list([
+                            Menu::make('Categories')
+                                ->icon('bs.folder')
+                                ->route('platform.gallery.categories'),
+                            Menu::make('Projects')
+                                ->icon('bs.collection')
+                                ->route('platform.gallery.projects'),
+                        ]),
                 ]),
 
             Menu::make('Sample Screen')

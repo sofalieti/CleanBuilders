@@ -3310,7 +3310,7 @@ body.roofing-page textarea.form-control {
 }
 
 .btn-gallery-cta {
-    background: linear-gradient(135deg, #3a952a 0%, #2e7a22 100%);
+    background: transparent;
     color: #ffffff;
     padding: 15px 30px;
     border-radius: 8px;
@@ -3320,15 +3320,15 @@ body.roofing-page textarea.form-control {
     display: inline-flex;
     align-items: center;
     transition: all 0.3s ease;
-    border: none;
-    box-shadow: 0 4px 12px rgba(58, 149, 42, 0.3);
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
 }
 
 .btn-gallery-cta:hover {
-    background: linear-gradient(135deg, #2e7a22 0%, #245c1a 100%);
-    color: #ffffff;
+    background: #ffffff;
+    color: #333333;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(58, 149, 42, 0.4);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
     text-decoration: none;
 }
 
@@ -3458,5 +3458,173 @@ body.roofing-page textarea.form-control {
     
     .gallery-overlay-content {
         padding: 10px;
+    }
+}
+
+/* Gallery Tiles Styles */
+.gallery-tiles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 992px) {
+    .gallery-tiles-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .gallery-tiles-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .gallery-tiles-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.gallery-tile {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.gallery-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-tile img {
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.gallery-tile:hover img {
+    transform: scale(1.05);
+}
+
+/* Green overlay on hover */
+.gallery-tile-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(58, 149, 42, 0.9) 0%, 
+        rgba(46, 122, 34, 0.9) 100%
+    );
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.gallery-tile:hover .gallery-tile-overlay {
+    opacity: 1;
+}
+
+.gallery-tile-content {
+    text-align: center;
+    color: white;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.gallery-tile:hover .gallery-tile-content {
+    transform: translateY(0);
+}
+
+.gallery-tile-content i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+}
+
+.gallery-tile-content h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 576px) {
+    .gallery-tiles-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gallery-tile img {
+        height: 240px !important;
+    }
+    
+    .gallery-tile-content i {
+        font-size: 1.8rem;
+        margin-bottom: 6px;
+    }
+    
+    .gallery-tile-content h5 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery-tiles-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-tile img {
+        height: 360px !important;
+    }
+}
+
+/* Modal Navigation Arrows */
+.modal-body .btn-link {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: none;
+    z-index: 10;
+}
+
+.modal-body .btn-link:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+
+.modal-body .btn-link i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .modal-body .btn-link {
+        width: 45px;
+        height: 45px;
+        font-size: 0.8rem;
+    }
+    
+    .modal-body .btn-link i {
+        font-size: 1.2rem;
     }
 }
