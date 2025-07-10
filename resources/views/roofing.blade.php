@@ -12,11 +12,11 @@ roofing-page
     {{-- Hero Section --}}
     @include('sections.hero-roofing')
 
-    {{-- Roofing Brands Section --}}
-    @include('sections.roofing-brands')
-
     {{-- Work Gallery Section --}}
     @include('sections.work-gallery')
+
+    {{-- Roofing Brands Section --}}
+    @include('sections.roofing-brands')
 
     {{-- Residential & Commercial Services Section --}}
     @include('sections.residential-commercial')

@@ -1,6 +1,11 @@
 <!-- Roofing Brands Section Start -->
-<section class="roofing-brands-section">
+<section class="roofing-brands-section section section-padding">
     <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2 class="section-title mb-4">Our Roofing Brands</h2>
+            </div>
+        </div>
         <div class="brands-strip">
             <div class="brands-logos">
                 <!-- GAF Brand -->

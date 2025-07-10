@@ -64,6 +64,12 @@ class PlatformProvider extends OrchidServiceProvider
                             Menu::make('Projects')
                                 ->icon('bs.collection')
                                 ->route('platform.gallery.projects'),
+                            Menu::make('Brands')
+                                ->icon('bs.star')
+                                ->route('platform.brands'),
+                            Menu::make('Materials')
+                                ->icon('bs.layers')
+                                ->route('platform.materials'),
                         ]),
                 ]),
 

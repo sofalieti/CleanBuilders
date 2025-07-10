@@ -58,4 +58,29 @@ class GalleryController extends Controller
 
         return view('gallery.project', compact('project'));
     }
+
+    /**
+     * Show all projects in a single list (one per row).
+     */
+    public function allProjects()
+    {
+        $projects = GalleryProject::active()
+            ->with(['categories', 'attachment'])
+            ->orderByDesc('project_date')
+            ->orderBy('sort_order')
+            ->get();
+        return view('projects.index', compact('projects'));
+    }
+
+    /**
+     * Show a single project with all details and images by category.
+     */
+    public function showProject($slug)
+    {
+        $project = GalleryProject::active()
+            ->with(['categories', 'attachment'])
+            ->where('slug', $slug)
+            ->firstOrFail();
+        return view('projects.show', compact('project'));
+    }
 } 

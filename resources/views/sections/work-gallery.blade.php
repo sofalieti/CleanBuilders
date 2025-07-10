@@ -1,10 +1,10 @@
 <!-- Work Gallery Section Start -->
-<section class="work-gallery-section">
+<section class="work-gallery-section section section-padding">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="gallery-header text-center">
-                    <h2 class="gallery-title">Our Recent Projects</h2>
+                <div class="gallery-header text-center mb-4">
+                    <h2 class="section-title mb-4">Our Recent Projects</h2>
                     <p class="gallery-subtitle">
                         @if(isset($categoryName))
                             {{ $categoryName }} projects across the Bay Area
@@ -20,12 +20,9 @@
             @if(isset($roofingProjects) && $roofingProjects->count() > 0)
                 @php
                     $allImages = collect();
-                    
-                    // Собираем все изображения из категории Roofing
                     foreach($roofingProjects as $project) {
                         $imagesByCategory = $project->getImagesByCategory();
                         foreach($imagesByCategory as $categoryId => $categoryImages) {
-                            // Проверяем, что это изображения из категории Roofing
                             $category = $project->categories->find($categoryId);
                             if($category && $category->name === 'Roofing') {
                                 foreach($categoryImages as $image) {
@@ -38,11 +35,8 @@
                             }
                         }
                     }
-                    
-                    // Ограничиваем до 6 изображений
                     $displayImages = $allImages->take(6);
                 @endphp
-                
                 @foreach($displayImages as $index => $imageData)
                     @php
                         $delay = ($index + 1) * 100;
@@ -57,12 +51,11 @@
                             <div class="gallery-tile-content">
                                 <i class="icofont-eye"></i>
                                 <h5>{{ $imageData['project_name'] }}</h5>
-                            </div>еее
+                            </div>
                         </div>
                     </div>
                 @endforeach
             @else
-                <!-- Fallback static images in tile format -->
                 @php
                     $staticImages = [
                         'assets/images/photos/IMG-20250701-WA0028.jpg',
@@ -72,7 +65,6 @@
                         'assets/images/photos/IMG-20250701-WA0027.jpg',
                         'assets/images/photos/IMG-20250701-WA0029.jpg'
                     ];
-                    
                     $titles = [
                         'Residential Roofing',
                         'Shingle Installation',
@@ -82,7 +74,6 @@
                         'Roof Repair'
                     ];
                 @endphp
-                
                 @foreach($staticImages as $index => $imagePath)
                     @php
                         $delay = ($index + 1) * 100;
@@ -104,8 +95,8 @@
             @endif
         </div>
 
-        <div class="gallery-cta text-center">
-            <a href="tel:855-355-0515" class="btn btn-gallery-cta">
+        <div class="gallery-cta text-center btn-section-spacing">
+            <a href="tel:855-355-0515" class="btn btn-schedule">
                 <i class="icofont-phone me-2"></i>
                 View More Projects
             </a>

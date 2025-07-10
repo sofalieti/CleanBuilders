@@ -168,3 +168,41 @@ Route::screen('gallery/projects/{project}/edit', GalleryProjectEditScreen::class
     ->breadcrumbs(fn (Trail $trail, $project) => $trail
         ->parent('platform.gallery.projects')
         ->push('Редактирование проекта', route('platform.gallery.projects.edit', $project)));
+
+// Platform > Brands
+Route::screen('brands', \App\Orchid\Screens\BrandListScreen::class)
+    ->name('platform.brands')
+    ->breadcrumbs(fn (Trail $trail) => $trail
+        ->parent('platform.index')
+        ->push('Brands', route('platform.brands')));
+
+Route::screen('brands/create', \App\Orchid\Screens\BrandEditScreen::class)
+    ->name('platform.brands.create')
+    ->breadcrumbs(fn (Trail $trail) => $trail
+        ->parent('platform.brands')
+        ->push('Create Brand', route('platform.brands.create')));
+
+Route::screen('brands/{brand}/edit', \App\Orchid\Screens\BrandEditScreen::class)
+    ->name('platform.brands.edit')
+    ->breadcrumbs(fn (Trail $trail, $brand) => $trail
+        ->parent('platform.brands')
+        ->push('Edit Brand', route('platform.brands.edit', $brand)));
+
+// Platform > Materials
+Route::screen('materials', \App\Orchid\Screens\MaterialListScreen::class)
+    ->name('platform.materials')
+    ->breadcrumbs(fn (Trail $trail) => $trail
+        ->parent('platform.index')
+        ->push('Materials', route('platform.materials')));
+
+Route::screen('materials/create', \App\Orchid\Screens\MaterialEditScreen::class)
+    ->name('platform.materials.create')
+    ->breadcrumbs(fn (Trail $trail) => $trail
+        ->parent('platform.materials')
+        ->push('Create Material', route('platform.materials.create')));
+
+Route::screen('materials/{material}/edit', \App\Orchid\Screens\MaterialEditScreen::class)
+    ->name('platform.materials.edit')
+    ->breadcrumbs(fn (Trail $trail, $material) => $trail
+        ->parent('platform.materials')
+        ->push('Edit Material', route('platform.materials.edit', $material)));
