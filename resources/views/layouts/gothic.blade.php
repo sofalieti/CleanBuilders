@@ -139,7 +139,7 @@
                                             <a href="#">Decks</a>
                                         </li>
                                         <li>
-                                            <a href="#">Projects</a>
+                                            <a href="{{ route('projects.index') }}">Projects</a>
                                         </li>
                                         <li>
                                             <a href="#">Contacts</a>
@@ -231,7 +231,7 @@
                                 <a href="#">Decks</a>
                             </li>
                             <li>
-                                <a href="#">Projects</a>
+                                <a href="{{ route('projects.index') }}">Projects</a>
                             </li>
                             <li>
                                 <a href="#">Contacts</a>
